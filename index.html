@@ -3,47 +3,99 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="//cloud.webtype.com/css/944a7551-9b08-4f0a-8767-e0f83db4a16b.css" />
+    <link rel="stylesheet" href="http://style.codeforamerica.org/style/css/main.css">
+    <link rel="stylesheet" href="http://style.codeforamerica.org/style/css/layout.css" media="all and (min-width: 40em)">
+    <link rel="stylesheet" href="css/style.css">
     <title>Code for All</title>
+
+    <script src='//code.jquery.com/jquery-2.1.0.min.js'></script>
+    <link href='//api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css' rel='stylesheet' />
+    <script src='//api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.js'></script>
 </head>
 
 <body>
-    <div id="header">
-        <h1>Code for All</h1>
-    </div>
+
+  <div class="global-header-compact" role="banner">
+    <a href="http://codeforall.org" class="global-header-logo">
+        <img src="images/code_for_all_logo.png" />
+    </a>
+    <p class="global-header-tagline"><strong>By the people, for the people,</strong> for the 21<sup>st</sup> century</p>
+  </div>
 
     <section>
-      Map with Code for All statement
+      <div id="map"></map>
     </section>
 
-    <section>
-        <h2>Stats</h2>
-        <ul class="bricks bricks-4">
+    <section class="layout-breve">
+      <ul class="bricks bricks-4">
 
-          <li class="brick badge-heading badge-glasses">
-          <h3 class="text-feature">1000</h3>
-          <p class="text-whisper">Total number of contributing volunteers on Github.</p>
-          </li>
+        <li class="brick badge-heading badge-glasses">
+        <h3 class="text-feature">1000</h3>
+        <p class="text-whisper">Total number of contributing volunteers on Github.</p>
+        </li>
 
         <li class="brick badge-heading badge-github">
-          <h3 class="text-feature">28</h3>
-          <p class="text-whisper">Active projects last month.</p>
+          <h3 id="numOfProjects" class="text-feature">1000</h3>
+          <p class="text-whisper">Total projects.</p>
         </li>
 
          <li class="brick badge-heading badge-github">
-          <h3 class="text-feature">15</h3>
+          <h3 id="numOfGroups" class="text-feature">1000</h3>
           <p class="text-whisper">Code for All groups.</p>
         </li>
 
         <li class="brick badge-heading">
-          <h3 class="text-feature">12</h3>
+          <h3 id="numOfEvents" class="text-feature">1000</h3>
           <p class="text-whisper">Events last month.</p>
         </li>
+
       </ul>
     </section>
 
-    <section>
-      Recent projects, stories, events
+    <section class="layout-breve">
+      <h3>Recent projects, stories, events</h3>
     </section>
     
 </body>
+
+<script>
+  
+  function showMap(){
+    // Show Map
+
+    // codeforamerica.j113mi4d - code for all
+    // codeforamerica.map-hhckoiuj - brigade
+    var map = L.mapbox.map('map', 'codeforamerica.map-hhckoiuj',
+    {
+      scrollWheelZoom:false
+    });
+    var latlon = [27, 0], zoom = 2;
+    map.setView(latlon, zoom);
+
+    // Get all CfAll organizations
+    $.getJSON("http://codeforamerica.org/api/organizations.geojson", function (response){
+      
+      orgs = response.features;
+      cfallOrgs = [];
+      $.each(orgs, function(i, org){
+        if (org.properties.type.indexOf("Code for All") != -1){
+          cfallOrgs.push(org);
+        }
+      })
+
+      // Add them to the map
+      var featureLayer = L.mapbox.featureLayer(response)
+        // only show Code for All markers
+        .setFilter(function(org) { 
+          return org.properties.type.indexOf("Code for All") != -1;
+        })
+        .addTo(map);
+      
+    });
+  }
+
+  showMap();
+</script>
+
 </html>
