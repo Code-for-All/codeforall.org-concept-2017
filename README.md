@@ -3,6 +3,9 @@ Code for All Website
 
 [Code for All](http://codeforall.org) is a network of civic technology groups across the world.
 
+Goals
+-----
+
 There a few goals with this website:
 
 1. Show off the collected activites of the Code for All network.
