@@ -100,17 +100,19 @@
     $("#numOfGroups").html(cfallOrgs.length);
 
     // Add num of projects
-    var numOfProjects = 0;
-
-    cfallOrgs.forEach(function (cfallorg, index, array) {
-      $.getJSON("http://codeforamerica.org/api/organizations/" + cfallorg.id + "/projects", function (response) {
+    var index = numOfProjects = 0;
+    cfallOrgs.forEach(function (cfallOrg) {
+      $.getJSON("http://codeforamerica.org/api/organizations/" + cfallOrg.id + "/projects", function (response) {
         numOfProjects += response.total;
-        
-        if(index === (array.length -1)) {
+        index += 1;
+        if(index === (cfallOrgs.length)) {
           $("#numOfProjects").html(numOfProjects);
         }
       });
-    });
+    })
+    // cfallOrgs.forEach(function (cfallorg, index, array) {
+      
+    // });
     
   }
 
