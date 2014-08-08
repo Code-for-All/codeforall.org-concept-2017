@@ -27,17 +27,12 @@
       <div id="map"></map>
     </section>
 
-    <section class="layout-breve">
-      <ul class="bricks bricks-4">
-
-        <li class="brick badge-heading  badge-github">
-        <h3 class="text-feature">1000</h3>
-        <p class="text-whisper">Total number of contributing volunteers on Github.</p>
-        </li>
+    <section class="layout-semibreve">
+      <ul class="bricks bricks-cta bricks-3">
 
         <li class="brick badge-heading badge-github">
           <h3 id="numOfProjects" class="text-feature"></h3>
-          <p class="text-whisper">Total projects.</p>
+          <p class="text-whisper">Total number of Code for All projects!</p>
         </li>
 
          <li class="brick badge-heading">
@@ -46,35 +41,47 @@
         </li>
 
         <li class="brick badge-heading">
-          <h3 id="numOfEvents" class="text-feature">1000</h3>
-          <p class="text-whisper">Events last month.</p>
+          <h3 id="numOfEvents" class="text-feature"></h3>
+          <p class="text-whisper">Number of events Code for All events thrown.</p>
         </li>
 
       </ul>
     </section>
 
     <section class="slab-gray">
-      <div class="layout-breve">
-        <h3>Recent Projects</h3>
-      </div>
+        <div class="layout-breve">
+            <div class="layout-minor">
+                <h3>Recent Project</h3>
+            </div>
+            <div class="layout-major" id="recentProject">
+            </div>
+        </div>
     </section>
 
     <section class="slab-blue">
-      <div class="layout-breve">
-        <h3>Recent Stories</h3>
-      </div>
+        <div class="layout-breve">
+            <div class="layout-minor">
+                <h3>Recent Story</h3>
+            </div>
+            <div class="layout-major" id="recentStory">
+            </div>
+        </div>
     </section>
 
     <section class="slab-dark-blue">
-      <div class="layout-breve">
-        <h3>Recent Events</h3>
-      </div>
+        <div class="layout-breve">
+            <div class="layout-minor">
+                <h3>Recent Event</h3>
+            </div>
+            <div class="layout-major" id="recentEvent">
+            </div>
+        </div>
     </section>
 
 </body>
 
 <script>
-  function showMap(orgs, cfallOrgs){
+  function showMap(cfallOrgs){
     // Show Map
 
     // codeforamerica.j113mi4d - code for all
@@ -86,36 +93,14 @@
     var latlon = [27, 0], zoom = 2;
     map.setView(latlon, zoom);
 
-    // Add them to the map
-    var featureLayer = L.mapbox.featureLayer(orgs)
-      // only show Code for All markers
-      .setFilter(function(org) {
-        return org.properties.type.indexOf("Code for All") != -1;
-      })
-      .addTo(map);
+    // Add the cfall orgs to the map
+    var featureLayer = L.mapbox.featureLayer(cfallOrgs).addTo(map);
 
     featureLayer.on('mouseover', function(e) {
         e.layer.openPopup();
     });
 
   };
-
-  function getNums(cfallOrgs){
-    // Add num of groups
-    $("#numOfGroups").html(cfallOrgs.length);
-
-    // Add num of projects
-    var index = numOfProjects = 0;
-    cfallOrgs.forEach(function (cfallOrg) {
-      $.getJSON("http://codeforamerica.org/api/organizations/" + cfallOrg.id + "/projects", function (response) {
-        numOfProjects += response.total;
-        index += 1;
-        if(index === (cfallOrgs.length)) {
-          $("#numOfProjects").html(numOfProjects);
-        }
-      });
-    })
-  }
 
   function getData(){
     // Get all CfAll organizations
@@ -131,9 +116,60 @@
         }
       });
 
-      showMap(orgs, cfallOrgs);
+      showMap(cfallOrgs);
+      showRecentProject();
+      showRecentStory();
+      showRecentEvent();
       getNums(cfallOrgs);
     })
+  }
+
+  function showRecentProject(){
+      $.getJSON("http://codeforamerica.org/api/projects?organization_type=Code for All&per_page=1", function (response){
+
+        var project = response.objects[0];
+        $("#recentProject").append("<h3><a href="+project.code_url+">"+project.name+"</a></h3>" +
+                                    "<p>"+project.description+"</p>"
+        );
+
+      });
+  }
+
+  function showRecentStory(){
+      $.getJSON("http://codeforamerica.org/api/stories?organization_type=Code for All&per_page=1", function (response){
+
+        var story = response.objects[0];
+        $("#recentStory").append("<h3><a href="+story.link+">"+story.title+"</a></h3>" +
+                                    "<p>By: " + story.organization.name+"</p>"
+        );
+
+      });
+  }
+
+  function showRecentEvent(){
+      $.getJSON("http://codeforamerica.org/api/events?organization_type=Code for All&per_page=1", function (response){
+
+        var event = response.objects[0];
+        $("#recentEvent").append("<h3><a href="+event.event_url+">"+event.name+"</a></h3>" +
+                                    "<p>By: " + event.organization.name+"</p>"
+        );
+
+      });
+  }
+
+  function getNums(cfallOrgs){
+    // Add num of groups
+    $("#numOfGroups").html(cfallOrgs.length);
+
+    // Add num of projects
+    $.getJSON("http://codeforamerica.org/api/projects?organization_type=Code for All", function (response) {
+        $("#numOfProjects").html(response.total);
+    });
+
+    // Add num of events
+    $.getJSON("http://codeforamerica.org/api/events?organization_type=Code for All", function (response) {
+        $("#numOfEvents").html(response.total);
+    });
   }
 
   getData();
