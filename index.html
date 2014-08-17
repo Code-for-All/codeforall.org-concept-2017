@@ -133,7 +133,7 @@
   }
 
   function showRecentEvent(){
-      $.getJSON("http://codeforamerica.org/api/events?organization_type=Code for All&per_page=1", function (response){
+      $.getJSON("http://codeforamerica.org/api/events/past_events?organization_type=Code for All&per_page=1", function (response){
 
         var event = response.objects[0];
         var html = '<h3><a href="' + event.event_url + '">' + event.name + '</a></h3>' +
