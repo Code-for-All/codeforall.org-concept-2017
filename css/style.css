@@ -10,3 +10,8 @@ body {
 .layout-breve {
 	padding: 2.5em;
 }
+
+.layout-minor {
+	margin-top: 16px;
+	text-align: center;
+}
