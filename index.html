@@ -46,42 +46,6 @@
     </div>
   </section>
 
-  <section class="slab-white">
-    <div class="layout-breve">
-      <div class="layout-minor">
-        <h3 id="numOfProjects"></h3>
-        <p class="text-whisper">Code for All projects!</p>
-      </div>
-      <div class="layout-major">
-        <div class="badge-heading badge-github badge-blue" id="recentProject">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="slab-blue">
-    <div class="layout-breve">
-      <div class="layout-minor">
-        <h3 id="numOfGroups"></h3>
-        <p class="text-whisper">Code for All groups.</p>
-      </div>
-      <div class="layout-major">
-        <div class="badge-heading badge-glasses badge-dark-blue" id="recentStory">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="slab-dark-blue">
-    <div class="layout-breve">
-      <div class="layout-minor">
-        <h3>Recent Event</h3>
-      </div>
-      <div class="layout-major" id="recentEvent">
-      </div>
-    </div>
-  </section>
-
   <section>
     <div class="layout-breve">
       <div class="badge-heading badge-github badge-blue">
@@ -103,16 +67,32 @@
             font-family: Interstate, 'Gotham A', 'Gotham B', 'Open Sans Regular', Verdana, Helvetica, Arial;
           }
         </style>
-        <iframe id="widget" src="http://codeforamerica.org/geeks/civicissues/widget?labels=help wanted&number=3" width="100%" height="320px" frameBorder="0" onLoad="resize();"> </iframe>
+        <iframe id="widget" src="http://codeforamerica.org/geeks/civicissues/widget?org_type=Code+for+All&labels=help wanted&number=3" width="100%" height="320px" frameBorder="0" onLoad="resize();"> </iframe>
       </div>
     </section>
 
   </body>
 
   <script>
-    function showMap(cfallOrgs){
-    // Show Map
 
+$(document).ready(function() {
+
+  $.getJSON("http://codeforamerica.org/api/organizations.geojson", function (response){
+
+    var orgs = response;
+    var cfallOrgs = [];
+    orgs.features.forEach(function(org) {
+      if (org.properties.type.indexOf("Code for All") != -1){
+        org.properties['marker-symbol'] = 'rocket';
+        org.properties['title'] = "<a href="+org.properties.website+">"+org.properties.name + "</a>";
+        cfallOrgs.push(org);
+      }
+    });
+
+    showMap(cfallOrgs);
+  });
+
+  function showMap(cfallOrgs){
     // codeforamerica.j113mi4d - code for all
     // codeforamerica.map-hhckoiuj - brigade
     var map = L.mapbox.map('map', 'codeforamerica.map-hhckoiuj',
@@ -131,84 +111,10 @@
 
   };
 
-  function getData(){
-    // Get all CfAll organizations
-    $.getJSON("http://codeforamerica.org/api/organizations.geojson", function (response){
-
-      var orgs = response;
-      var cfallOrgs = [];
-      orgs.features.forEach(function(org) {
-        if (org.properties.type.indexOf("Code for All") != -1){
-          org.properties['marker-symbol'] = 'rocket';
-          org.properties['title'] = "<a href="+org.properties.website+">"+org.properties.name + "</a>";
-          cfallOrgs.push(org);
-        }
-      });
-
-      showMap(cfallOrgs);
-      showRecentProject();
-      showRecentStory();
-      showRecentEvent();
-      getNums(cfallOrgs);
-    })
-  }
-
-  function showRecentProject(){
-    $.getJSON("http://codeforamerica.org/api/projects?organization_type=Code for All&per_page=1", function (response){
-
-      var project = response.objects[0];
-      var html = '<h3><a href="' + project.code_url + '">' + project.name + '</a></h3>' +
-      '<p>' + project.description + '</p>' +
-      '<p>By: <a href="' + project.organization.website + '"</a>' +
-      project.organization.name + '</p>';
-      $("#recentProject").append( html );
-    });
-  }
-
-  function showRecentStory(){
-    $.getJSON("http://codeforamerica.org/api/stories?organization_type=Code for All&per_page=1", function (response){
-
-      var story = response.objects[0];
-      var html = '<h3><a href="' + story.link + '">' + story.title + '</a></h3>' +
-      '<p>By: <a href="' + story.organization.website + '"</a>' +
-      story.organization.name + '</p>';
-      $("#recentStory").append( html );
-    });
-  }
-
-  function showRecentEvent(){
-    $.getJSON("http://codeforamerica.org/api/events/past_events?organization_type=Code for All&per_page=1", function (response){
-
-      var event = response.objects[0];
-      var html = '<h3><a href="' + event.event_url + '">' + event.name + '</a></h3>' +
-      '<p>By: <a href="' + event.organization.website + '"</a>' +
-      event.organization.name + '</p>';
-      $("#recentEvent").append( html );
-    });
-  }
-
-  function getNums(cfallOrgs){
-    // Add num of groups
-    $("#numOfGroups").html(cfallOrgs.length);
-
-    // Add num of projects
-    $.getJSON("http://codeforamerica.org/api/projects?organization_type=Code for All", function (response) {
-      $("#numOfProjects").html(response.total);
-    });
-
-    // // Add num of events
-    // $.getJSON("http://codeforamerica.org/api/events?organization_type=Code for All", function (response) {
-    //     $("#numOfEvents").html(response.total);
-    // });
-}
-
-getData();
-
-$(document).ready(function() {
   $('#cfa-listings').dataTable({
     "ajax": function (data, callback, settings) {
       settings.sAjaxDataProp = "objects"
-      $.getJSON('http://codeforamerica.org/api/organizations?per_page=12&type=Code%20for%20All', function(response) {
+      $.getJSON('http://codeforamerica.org/api/organizations?type=Code+for+All', function(response) {
         callback(response);
       });
     },
@@ -248,6 +154,12 @@ $(document).ready(function() {
     ]
   });
 });
+
+  // Resize iframe to fit content
+  function resize() {
+    var newheight = document.getElementById("widget").contentWindow.document.body.scrollHeight;
+    document.getElementById("widget").height = newheight + "px";
+  }
 </script>
 
 </html>
