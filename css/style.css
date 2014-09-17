@@ -2,6 +2,11 @@ body {
 	background-color: #FFF;
 }
 
+header {
+	position:relative;
+	top:-15px;
+}
+
 #map {
 	width: 100%;
 	height: 450px;
