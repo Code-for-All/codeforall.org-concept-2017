@@ -6,8 +6,84 @@ $(document).ready(function() {
     var cfallOrgs = [];
     orgs.features.forEach(function(org) {
       if (org.properties.type.indexOf("Code for All") != -1){
-        org.properties['marker-symbol'] = 'rocket';
-        
+
+        if (org.properties['name'] == 'Code for America'){
+          org.properties.icon = {}
+          org.properties.icon['iconUrl'] = "images/cfamerica.png"
+          org.properties.icon['className'] = 'marker'
+          org.properties.icon['iconAnchor'] = [-10, 75]
+          org.properties.icon['popupAnchor'] = [60, -50]
+        }
+        if (org.properties['name'] == 'Codigo para la Ciudad de Mexico'){
+          org.properties.icon = {}
+          org.properties.icon['iconUrl'] = "images/labplc.jpeg"
+          org.properties.icon['className'] = 'marker'
+          org.properties.icon['iconAnchor'] = [75, 35]
+          org.properties.icon['popupAnchor'] = [-30, -20]
+        }
+        if (org.properties['name'] == 'Code for the Caribbean'){
+          org.properties.icon = {}
+          org.properties.icon['iconUrl'] = "images/cfcaribbean.png"
+          org.properties.icon['className'] = 'marker'
+          org.properties.icon['iconAnchor'] = [35, 60]
+          org.properties.icon['popupAnchor'] = [15, -30]
+        }
+        if (org.properties['name'] == 'Code for South Africa'){
+          org.properties.icon = {}
+          org.properties.icon['iconUrl'] = "images/cfsa.png"
+          org.properties.icon['className'] = 'marker'
+          org.properties.icon['iconAnchor'] = [25, 75]
+          org.properties.icon['popupAnchor'] = [25, -50]
+        }
+        if (org.properties['name'] == 'Code for Ireland'){
+          org.properties.icon = {}
+          org.properties.icon['iconUrl'] = "images/cfireland.png"
+          org.properties.icon['className'] = 'marker'
+          org.properties.icon['iconAnchor'] = [85, 75]
+          org.properties.icon['popupAnchor'] = [-35, -25]
+        }
+        if (org.properties['name'] == 'Code for Germany'){
+          org.properties.icon = {}
+          org.properties.icon['iconUrl'] = "images/cfgermany.jpeg"
+          org.properties.icon['className'] = 'marker'
+          org.properties.icon['iconAnchor'] = [75, 25]
+          org.properties.icon['popupAnchor'] = [-35, 0]
+        }
+        if (org.properties['name'] == 'Code for Poland'){
+          org.properties.icon = {}
+          org.properties.icon['iconUrl'] = "images/cfpoland.svg"
+          org.properties.icon['className'] = 'marker'
+          org.properties.icon['iconAnchor'] = [25, 70]
+          org.properties.icon['popupAnchor'] = [25, -25]
+        }
+        if (org.properties['name'] == 'Code for Pakistan'){
+          org.properties.icon = {}
+          org.properties.icon['iconUrl'] = "images/cfpakistan.png"
+          org.properties.icon['className'] = 'marker'
+          org.properties.icon['iconSize'] = [100, 100]
+          org.properties.icon['popupAnchor'] = [0, -25]
+        }
+        if (org.properties['name'] == 'Code for Seoul'){
+          org.properties.icon = {}
+          org.properties.icon['iconUrl'] = "images/cfseoul.png"
+          org.properties.icon['className'] = 'marker'
+          org.properties.icon['iconAnchor'] = [75, 75]
+          org.properties.icon['popupAnchor'] = [-25, -50]
+        }
+        if (org.properties['name'] == 'Code for Japan'){
+          org.properties.icon = {}
+          org.properties.icon['iconUrl'] = "images/cfjapan.png"
+          org.properties.icon['className'] = 'marker'
+          org.properties.icon['iconAnchor'] = [25,25]
+          org.properties.icon['popupAnchor'] = [25, 0]
+        }
+        if (org.properties['name'] == 'Code for Australia'){
+          org.properties.icon = {}
+          org.properties.icon['iconUrl'] = "images/cfaustralia.jpeg"
+          org.properties.icon['className'] = 'marker'
+          org.properties.icon['iconAnchor'] = [75,75]
+          org.properties.icon['popupAnchor'] = [-25,-50]
+        }
         
         org.properties['title'] = "<a href="+org.properties.website+">"+org.properties.name + "</a>";
         cfallOrgs.push(org);
