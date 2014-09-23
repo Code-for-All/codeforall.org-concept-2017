@@ -47,6 +47,9 @@ $(document).ready(function() {
         if (org.properties['name'] == 'g0v.tw'){
           org.properties.icon['iconUrl'] = "images/g0v.png"
         }
+        if (org.properties['name'] == 'Codeando México'){
+          org.properties.icon['iconUrl'] = "images/cfmexico.png"
+        }
 
         cfallOrgs.push(org);
       }
