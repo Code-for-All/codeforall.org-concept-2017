@@ -73,7 +73,7 @@ $(document).ready(function() {
 
     featureLayer.eachLayer(function(marker) {
       feature = marker.feature;
-      if (feature.properties.icon){
+      if (feature.properties.icon['iconUrl']){
         marker.setIcon(L.icon(feature.properties.icon));
       }
       
