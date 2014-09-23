@@ -44,6 +44,10 @@ $(document).ready(function() {
         if (org.properties['name'] == 'Code for Australia'){
           org.properties.icon['iconUrl'] = "images/cfaustralia.jpeg"
         }
+        if (org.properties['name'] == 'g0v.tw'){
+          org.properties.icon['iconUrl'] = "images/g0v.png"
+        }
+
         cfallOrgs.push(org);
       }
     });
