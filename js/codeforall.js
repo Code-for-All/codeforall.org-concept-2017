@@ -20,8 +20,20 @@ $(document).ready(function() {
         if (org.properties['name'] == 'Code for the Caribbean'){
           org.properties.icon['iconUrl'] = "images/cfcaribbean.png"
         }
+        if (org.properties['name'] == 'Code for Africa'){
+          org.properties.icon['iconUrl'] = "images/cfafrica.png"
+        }
         if (org.properties['name'] == 'Code for South Africa'){
           org.properties.icon['iconUrl'] = "images/cfsa.png"
+        }
+        if (org.properties['name'] == 'Code for Kenya'){
+          org.properties.icon['iconUrl'] = "images/cfke.png"
+        }
+        if (org.properties['name'] == 'Code for Nigeria'){
+          org.properties.icon['iconUrl'] = "images/cfng.png"
+        }
+        if (org.properties['name'] == 'Code for Ghana'){
+          org.properties.icon['iconUrl'] = "images/cfgh.png"
         }
         if (org.properties['name'] == 'Code for Ireland'){
           org.properties.icon['iconUrl'] = "images/cfireland.png"
@@ -76,7 +88,7 @@ $(document).ready(function() {
       if (feature.properties.icon['iconUrl']){
         marker.setIcon(L.icon(feature.properties.icon));
       }
-      
+
     });
 
     featureLayer.addTo(map);
@@ -100,10 +112,10 @@ $(document).ready(function() {
     "serverSide": false,
     "paging": false,
     "columns": [
-      { "data": "name", "render": function (data, type, full, meta) 
+      { "data": "name", "render": function (data, type, full, meta)
         {
           return '<a href="'+full.website+'">'+data+'</a>'
-        } 
+        }
       },
       {
         "width": "20%",
