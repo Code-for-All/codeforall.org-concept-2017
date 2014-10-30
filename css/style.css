@@ -12,6 +12,12 @@ header {
 	height: 450px;
 }
 
+@media (max-width: 40em) {
+  #map {
+    display: none;
+  }
+}
+
 .layout-breve {
 	padding: 2.5em;
 }
