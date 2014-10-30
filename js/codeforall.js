@@ -50,6 +50,21 @@ $(document).ready(function() {
         if (org.properties['name'] == 'Codeando México'){
           org.properties.icon['iconUrl'] = "images/cfmexico.png"
         }
+        if (org.properties['name'] == 'Code for Ghana'){
+          org.properties.icon['iconUrl'] = "images/ghana.png"
+        }
+        if (org.properties['name'] == 'Code for Nigeria'){
+          org.properties.icon['iconUrl'] = "images/nigeria.png"
+        }
+        if (org.properties['name'] == 'Code for Kenya'){
+          org.properties.icon['iconUrl'] = "images/kenya.png"
+        }
+        if (org.properties['name'] == 'Code for Africa'){
+          org.properties.icon['iconUrl'] = "images/c4africa.png"
+        }
+        if (org.properties['name'] == 'Code for Tomorrow'){
+          org.properties.icon['iconUrl'] = "images/cftomorrow.png"
+        }
 
         cfallOrgs.push(org);
       }
