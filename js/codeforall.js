@@ -94,6 +94,7 @@ $(document).ready(function() {
         callback(response);
       });
     },
+    "responsive": true,
     "searching": false,
     "info": false,
     "processing": true,
