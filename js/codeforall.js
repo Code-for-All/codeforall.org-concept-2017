@@ -122,7 +122,7 @@ $(document).ready(function() {
         } 
       },
       {
-        "width": "20%",
+        "width": "50%",
         "data": "current_projects.0.name",
         "defaultContent": "...",
         "render": function (data, type, full, meta) {
