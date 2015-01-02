@@ -77,6 +77,9 @@ $(document).ready(function() {
         if (org.properties['name'] == 'Code for Tomorrow'){
           org.properties.icon['iconUrl'] = "images/cftomorrow.png"
         }
+        if (org.properties['name'] == 'CodeNamu(Code for Korea)'){
+          org.properties.icon['iconUrl'] = "images/codenamu.png"
+        }
 
         cfallOrgs.push(org);
       }
