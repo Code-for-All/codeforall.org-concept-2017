@@ -1,0 +1,52 @@
+---
+layout: default
+cfapiorgname: Code-for-the-Caribbean
+---
+<section>
+
+  <div class="slab-dark-blue">
+
+    <div class="layout-semibreve">
+
+      <h1>Code for the Caribbean</h1>
+      <h2><a href="http://www.codeforthecaribbean.org/">http://www.codeforthecaribbean.org/</a></h2>
+
+    </div>
+
+  </div>
+
+  <div id="current-projects" class="slab-white">
+
+    <div class='layout-semibreve'>
+
+      <div class="layout-major-invert">
+
+          <h2 name="projects">Current Projects</h2>
+
+          <ul class="list-no-bullets list-icons" id="projects">
+          </ul>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="slab-red">
+
+    <div class="layout-semibreve">
+
+        <h2>Current Stories</h2>
+
+        <ul class="list-no-bullets list-icons" id="stories">
+        </ul>
+
+    </div>
+  </div>
+
+  <div class="layout-breve">
+      <a id="issues"></a>
+      <h2>Open Github Issues</h2>
+      <iframe src="https://www.codeforamerica.org/geeks/civicissues/widget?organization_name={{page.cfapiorgname}}&number=3" width="100%" height="600px" frameBorder="0"></iframe>
+    </div>
+
+{% include partners.html %}

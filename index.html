@@ -1,74 +1,34 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" href="http://style.codeforamerica.org/style/css/main.css">
-  <link rel="stylesheet" href="http://style.codeforamerica.org/style/css/layout.css" media="all and (min-width: 40em)">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Code for All</title>
+---
+layout: default
+---
 
-  <script src='//code.jquery.com/jquery-2.1.0.min.js'></script>
-  <link href='//api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css' rel='stylesheet' />
-  <script src='//api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.js'></script>
+<section>
+  <div id="map"></div>
+</section>
 
-  <script src='//cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js'></script>
-  <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
-  <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/responsive/1.0.2/css/dataTables.responsive.css">
-  <script src='//cdn.datatables.net/responsive/1.0.2/js/dataTables.responsive.js'></script>
-  <script src='//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.2/moment.min.js'></script>
-</head>
+<section class="slab-white">
+  <div class="layout-breve">
+    <table id="cfa-listings">
+    <thead>
+      <tr>
+        <th>Organization</th>
+        <th>Latest Project</th>
+        <th>Latest News</th>
+        <!-- <th>Upcoming Event</th> -->
+      </tr>
+    </thead>
+    </table>
+  </div>
+</section>
 
-<body>
-  <header class="layout-breve">
-    <div class="global-header-compact" role="banner">
-      <a href="http://codeforall.org/" class="global-header-logo">
-        <img src="images/code_for_all_logo.png" />
-      </a>
-      <p class="global-header-tagline">An international network of <strong>civic innovators</strong>. </p>
+<section>
+  <div class="layout-breve">
+    <div class="badge-heading badge-github badge-blue">
+      <h2>Code for All Right Now</h2>
+      <p>These are open GitHub Issues from across the Code for All organizations. Find more using the <a href="http://codeforamerica.org/geeks/civicissues">Civic Tech Issue Finder</a>.</p>
     </div>
-    <nav class="nav-global-secondary">
-      <ul>
-        <li class="nav-tier1">
-          <a href="http://codeforall.org/about">About</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+    <iframe id="widget" src="http://codeforamerica.org/geeks/civicissues/widget?org_type=Code+for+All&number=3" width="100%" height="500px" frameBorder="0" onLoad="resize();"> </iframe>
+  </div>
+</section>
 
-  <section>
-    <div id="map"></div>
-  </section>
-
-  <section class="slab-white">
-    <div class="layout-breve">
-      <table id="cfa-listings">
-      <thead>
-        <tr>
-          <th>Organization</th>
-          <th>Latest Project</th>
-          <th>Latest News</th>
-          <!-- <th>Upcoming Event</th> -->
-        </tr>
-      </thead>
-      </table>
-    </div>
-  </section>
-
-  <section>
-    <div class="layout-breve">
-      <div class="badge-heading badge-github badge-blue">
-        <h2>Code for All Right Now</h2>
-        <p>These are open GitHub Issues
-          from across the Code for All organizations. Find more using the
-          <a href="http://codeforamerica.org/geeks/civicissues">Civic Tech Issue Finder</a>.</p>
-        </div>
-        <iframe id="widget" src="http://codeforamerica.org/geeks/civicissues/widget?org_type=Code+for+All&number=3" width="100%" height="500px" frameBorder="0" onLoad="resize();"> </iframe>
-      </div>
-    </section>
-
-  </body>
-
-  <script src="js/codeforall.js"></script>
-
-</html>
+<script src="/js/codeforall.js"></script>
