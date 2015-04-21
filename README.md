@@ -12,9 +12,10 @@ There a few goals with this website:
 2. Promote the work of the Code for All partners.
 3. Host tools needed by the network.
 
+
 Install
 -------
-This site is built with HTML, CSS, Javascript.
+This site is built with HTML, CSS, Javascript. It runs on [jekyll](http://jekyllrb.com/) and is hosted by [GitHub Pages](https://pages.github.com/).
 
 The data about the Code for All groups is pulled from the [Code for America API](http://codeforamerica.org/api). The work on that project is happening under the [cfapi](https://github.com/codeforamerica/cfapi) repository.
 
