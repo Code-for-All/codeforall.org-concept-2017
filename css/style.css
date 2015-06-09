@@ -43,3 +43,19 @@ header {
 	top:-50px;
 	left:-50px;
 }
+
+.slab-teal {
+	background: #85FFC7;
+}
+
+.slab-blue {
+	background: #329ED5;
+}
+
+.slab-orange {
+	background: #FF8552;
+}
+
+.slab-gray {
+	background: #E6E6E6;
+}
