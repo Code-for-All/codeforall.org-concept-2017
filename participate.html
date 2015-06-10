@@ -10,6 +10,7 @@ layout: default
     <div class="layout-semibreve">
       <h2>Are you interested in joining the Code for All Network?</h2>
       <p>Great! There are three ways to participate:</p>
+      
       <ol>
         <li>You can always access our online <a href="http://www.codeforamerica.org/library/">resources</a> and <a href="http://www.codeforamerica.org/brigade/tools"> and organizing toolkits.</a></li><br>
         <li>If your the first Code for All organizer in your contry or city, we would love to help you get started!  <br>
@@ -20,23 +21,19 @@ layout: default
         Gaining solid local government partners as well as institutional partners/funders are the main ingredients to joining Code for All. 
         <ul>
           <li>Check to see if there is already an active Brigade or Code for All Partner near you. <button id='geolocate'>Check for a nearby Brigade</button></li>
-          <div class="alert-success" style="display:none;">
-           <p>The closest Brigade to you is <a id="closest-brigade">...</a>.</p>
-          </div>
+            <div class="alert-success" style="display:none;">
+            <p>The closest Brigade to you is <a id="closest-brigade">...</a>.</p>
+            </div>
           <li>Fill out the below form and we will send you an email with organizing resources.</li>
-          </div>
-              <div id="newsignup">{{ signup | safe }}
-          </div>
-          </ul>
+              <div id="newsignup">{{ signup | safe }}</div>
+        </ul>
         <li>BIf you have been organizing for a while, and already have a steady member base of volunteers, co-organizers, partners, and funders, you, too can become an Partner of Code for All. As an established institution in your home country we invite you to send us an email with more information about your work. <br>
         Reach out to international [at] codeforamerica.org  </li>
       </ol>
+      <br>
       <p><b>Team Contact</b>: international [at] codeforamerica [dot] org </a>.</p>
     </div>
 
-  </div>
-
-  <div id="newsignup">{{ signup | safe }}</div>
   </div>
 
 </section>
