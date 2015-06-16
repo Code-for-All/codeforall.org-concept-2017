@@ -7,6 +7,30 @@ header {
 	top:-15px;
 }
 
+a, a:link, a:hover, a:focus, a:active, a:visited {
+  border-bottom: 1px solid;
+  border-color: #329ED5;
+  color: #329ED5;
+}
+
+.logo-wrap {
+	float: right;
+	width: 300px;
+	text-align: right;
+}
+
+.highlight blockquote, .highlight > p, .highlight blockquote:before
+{
+	color:#000000;
+}
+
+@media (min-width: 40em){
+.highlight-with-avatar
+{
+	padding-left: 0;
+}
+}
+
 #map {
 	width: 100%;
 	height: 450px;
@@ -18,9 +42,19 @@ header {
   }
 }
 
+.slab-red {
+	background-color: #FF8552;
+
+}
+
+.slab-grey {
+	background-color: #E6E6E6;
+
+}
 .layout-breve {
 	padding: 2.5em;
 }
+
 
 .layout-minor {
 	margin-top: 16px;
@@ -42,21 +76,4 @@ header {
 	position: relative;
 	top:-50px;
 	left:-50px;
-}
-
-.slab-teal {
-	background: #85FFC7;
-	color: #333333;
-}
-
-.slab-blue {
-	background: #329ED5;
-}
-
-.slab-orange {
-	background: #FF8552;
-}
-
-.slab-gray {
-	background: #E6E6E6;
 }
