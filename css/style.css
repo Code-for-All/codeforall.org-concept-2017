@@ -24,6 +24,7 @@ a, a:link, a:hover, a:focus, a:active, a:visited {
 	color:#000000;
 }
 
+
 @media (min-width: 40em){
 .highlight-with-avatar
 {
@@ -76,4 +77,38 @@ a, a:link, a:hover, a:focus, a:active, a:visited {
 	position: relative;
 	top:-50px;
 	left:-50px;
+}
+
+.masthead {
+
+    min-height: 400px;
+}
+
+.masthead-berlin::before {
+    background-image: url("/images/berlin.jpg");
+    min-height: 400px;
+
+}
+
+.masthead-warschau::before {
+    background-image: url("/images/warschau.jpg");
+    min-height: 400px;
+
+}
+
+.masthead-warschau::before {
+    background-image: url("/images/mexico_.jpg");
+    min-height: 400px;
+
+}
+
+.masthead-xl .masthead-header::before {
+
+	height: 400px;
+}
+
+.masthead-header {
+
+    height: 400px;
+
 }
