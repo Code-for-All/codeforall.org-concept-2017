@@ -8,13 +8,9 @@ header {
 }
 
 a, a:link, a:hover, a:focus, a:active, a:visited {
-  border-bottom: 1px solid;
+  border-bottom: none;
   border-color: #329ED5;
   color: #329ED5;
-}
-
-.nav-global-secondary li a:hover, a:visited {
-  color: #FF8552;
 }
 
 .logo-wrap {
@@ -34,6 +30,12 @@ a, a:link, a:hover, a:focus, a:active, a:visited {
 {
 	padding-left: 0;
 }
+}
+
+table a:link, table a:visited, table a:hover, table a:focus, table a:active {
+  color: #FF8552;
+    border-bottom: solid 1px;
+
 }
 
 #map {
@@ -92,54 +94,43 @@ a, a:link, a:hover, a:focus, a:active, a:visited {
 }
 
 .masthead {
+    height: 400px;
+}
 
+.masthead:before {
+	height: 100%;
     min-height: 400px;
 }
 
 .masthead-berlin::before {
     background-image: url("/images/berlin.jpg");
-    min-height: 400px;
-
 }
 
 .masthead-warsaw::before {
     background-image: url("/images/warschau.jpg");
-    min-height: 400px;
-
 }
 
 .masthead-caribbean::before {
     background-image: url("/images/caribbean_.jpg");
-    min-height: 400px;
-
 }
 
 .masthead-mexico::before {
     background-image: url("/images/mexico_.jpg");
-    min-height: 400px;
-
 }
 
 .masthead-netherlands::before {
     background-image: url("/images/amsterdam.jpg");
-    min-height: 400px;
-
 }
 
 .masthead-melbourne::before {
     background-image: url("/images/melbourne.jpg");
-    min-height: 400px;
-
 }
 
 .masthead-pakistan::before {
     background-image: url("/images/karachi.jpg");
-    min-height: 400px;
-
 }
-.masthead-xl .masthead-header::before {
-
-	height: 400px;
+.masthead-xl .masthead-header:before {
+	height: 100%;
 }
 
 .masthead-header {
