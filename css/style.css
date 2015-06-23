@@ -108,8 +108,20 @@ a, a:link, a:hover, a:focus, a:active, a:visited {
 
 }
 
+.masthead-caribbean::before {
+    background-image: url("/images/caribbean_.jpg");
+    min-height: 400px;
+
+}
+
 .masthead-mexico::before {
     background-image: url("/images/mexico_.jpg");
+    min-height: 400px;
+
+}
+
+.masthead-netherlands::before {
+    background-image: url("/images/amsterdam.jpg");
     min-height: 400px;
 
 }
