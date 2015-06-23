@@ -111,11 +111,21 @@ table a:link, table a:visited, table a:hover, table a:focus, table a:active {
 
 .masthead {
     height: 400px;
+    background-color: #000;
 }
 
 .masthead:before {
 	height: 100%;
     min-height: 400px;
+    opacity: 0.4;
+}
+
+.masthead-xl .masthead-header:before {
+    background-image: none;
+}
+
+.masthead-xl .page-title {
+  margin-top: 25px;
 }
 
 .masthead-berlin::before {
