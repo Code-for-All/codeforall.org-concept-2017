@@ -2,6 +2,11 @@ $(document).ready(function() {
 
   $.getJSON("http://codeforamerica.org/api/organizations.geojson", function (response){
 
+    $(".mobile-menu").click(function(e){
+      e.preventDefault();
+      $(".nav-global-secondary ul").slideToggle();
+    })
+
     var orgs = response;
     var cfallOrgs = [];
     orgs.features.forEach(function(org) {
