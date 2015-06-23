@@ -13,6 +13,10 @@ a, a:link, a:hover, a:focus, a:active, a:visited {
   color: #329ED5;
 }
 
+.nav-global-secondary li a:hover, a:visited {
+  color: #FF8552;
+}
+
 .logo-wrap {
 	float: right;
 	width: 300px;
