@@ -106,6 +106,10 @@ table a:link, table a:visited, table a:hover, table a:focus, table a:active {
     background-image: url("/images/berlin.jpg");
 }
 
+.masthead-sanfrancisco::before {
+    background-image: url("/images/sanfrancisco.jpg");
+}
+
 .masthead-warsaw::before {
     background-image: url("/images/warschau.jpg");
 }
