@@ -47,7 +47,15 @@ a, a:link, a:hover, a:focus, a:active, a:visited {
 	background-color: #FF8552;
 
 }
+.slab-lightblue {
+	background-color: #329ED5;
 
+}
+
+.slab-green {
+	background-color: #85FFC7;
+
+}
 .slab-grey {
 	background-color: #E6E6E6;
 
@@ -90,18 +98,29 @@ a, a:link, a:hover, a:focus, a:active, a:visited {
 
 }
 
-.masthead-warschau::before {
+.masthead-warsaw::before {
     background-image: url("/images/warschau.jpg");
     min-height: 400px;
 
 }
 
-.masthead-warschau::before {
+.masthead-mexico::before {
     background-image: url("/images/mexico_.jpg");
     min-height: 400px;
 
 }
 
+.masthead-melbourne::before {
+    background-image: url("/images/melbourne.jpg");
+    min-height: 400px;
+
+}
+
+.masthead-pakistan::before {
+    background-image: url("/images/karachi.jpg");
+    min-height: 400px;
+
+}
 .masthead-xl .masthead-header::before {
 
 	height: 400px;
