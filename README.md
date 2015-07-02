@@ -8,7 +8,7 @@ Goals
 
 There a few goals with this website:
 
-1. Show off the collected activites of the Code for All network.
+1. Show off the collected activities of the Code for All network.
 2. Promote the work of the Code for All partners.
 3. Host tools needed by the network.
 
@@ -36,6 +36,7 @@ voting it up. When submitting a bug report, please include a [Gist][] that
 includes a stack trace and any details that may be necessary to reproduce the
 bug.
 
+[issues]: https://github.com/Code-for-All/codeforall.org/issues
 [gist]: https://gist.github.com/
 
 Submitting a Pull Request
