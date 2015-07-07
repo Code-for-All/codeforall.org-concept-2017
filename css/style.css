@@ -59,7 +59,7 @@ table a:link, table a:visited, table a:hover, table a:focus, table a:active {
 }
 
 table {
-  background-color: rgba(229, 229, 229, 0.5);
+  background-color: white;
   width: 100%;
 }
 
