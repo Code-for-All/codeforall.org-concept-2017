@@ -54,8 +54,13 @@ a, a:link, a:hover, a:focus, a:active, a:visited {
 
 table a:link, table a:visited, table a:hover, table a:focus, table a:active {
   color: #FF8552;
-    border-bottom: solid 1px;
+  border-bottom: solid 1px;
 
+}
+
+table {
+  background-color: rgba(229, 229, 229, 0.5);
+  width: 100%;
 }
 
 #map {
