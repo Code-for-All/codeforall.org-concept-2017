@@ -59,7 +59,7 @@ table a:link, table a:visited, table a:hover, table a:focus, table a:active {
 }
 
 table {
-  background-color: white;
+  background-color: #f1f1f1;
   width: 100%;
 }
 
@@ -84,7 +84,7 @@ table {
 }
 
 .slab-green {
-	background-color: #85FFC7;
+	background-color: #71CAD1;
 
 }
 .slab-grey {
@@ -116,6 +116,14 @@ table {
 	position: relative;
 	top:-50px;
 	left:-50px;
+}
+
+td, th {
+  border-bottom: 1px solid #e9e9e9;
+  min-width: 120px;
+  padding: 6px 32px 6px 0;
+  text-align: left;
+  vertical-align: top;
 }
 
 .masthead {
