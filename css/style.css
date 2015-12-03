@@ -176,6 +176,10 @@ td, th {
 .masthead-pakistan::before {
     background-image: url("/images/karachi.jpg");
 }
+
+.masthead-japan::before {
+    background-image: url("/images/tokyo.jpg");
+}
 .masthead-xl .masthead-header:before {
 	height: 100%;
 }
