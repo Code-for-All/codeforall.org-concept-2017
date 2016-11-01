@@ -16,7 +16,7 @@ $(document).ready(function() {
     "columns": [
       { "data": "name", "render": function (data, type, full, meta)
         {
-          return '<a href="'+full.website+'">'+data+'</a>'
+          return '<a href="http://code-for-all.github.io/codeforall.org'+full.website+'">'+data+'</a>'
         }
       },
       {
@@ -25,7 +25,7 @@ $(document).ready(function() {
         "defaultContent": "...",
         "render": function (data, type, full, meta) {
           if (full.current_projects.length) {
-            return '<a href="'+full.current_projects[0].code_url+'">'+data+'</a><br /><small>'+full.current_projects[0].description+'</small>'
+            return '<a href="http://code-for-all.github.io/codeforall.org'+full.current_projects[0].code_url+'">'+data+'</a><br /><small>'+full.current_projects[0].description+'</small>'
           }
         }
       }
