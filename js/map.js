@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  $.getJSON("http://codeforamerica.org/api/organizations.geojson", function (response){
+  $.getJSON("http://api.codeforamerica.org/api/organizations.geojson", function (response){
 
     $(".mobile-menu").click(function(e){
       e.preventDefault();

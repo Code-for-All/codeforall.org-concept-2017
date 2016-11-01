@@ -3,7 +3,7 @@ $(document).ready(function() {
   $('#cfa-listings').dataTable({
     "ajax": function (data, callback, settings) {
       settings.sAjaxDataProp = "objects"
-      $.getJSON('http://codeforamerica.org/api/organizations?type=Code+for+All&per_page=100', function(response) {
+      $.getJSON('http://api.codeforamerica.org/api/organizations?type=Code+for+All&per_page=100', function(response) {
         callback(response);
       });
     },

@@ -146,39 +146,39 @@ td, th {
 }
 
 .masthead-berlin::before {
-    background-image: url("/images/berlin.jpg");
+    background-image: url("images/berlin.jpg");
 }
 
 .masthead-sanfrancisco::before {
-    background-image: url("/images/sanfrancisco.jpg");
+    background-image: url("images/sanfrancisco.jpg");
 }
 
 .masthead-warsaw::before {
-    background-image: url("/images/warschau.jpg");
+    background-image: url("images/warschau.jpg");
 }
 
 .masthead-caribbean::before {
-    background-image: url("/images/caribbean_.jpg");
+    background-image: url("images/caribbean_.jpg");
 }
 
 .masthead-mexico::before {
-    background-image: url("/images/mexico_.jpg");
+    background-image: url("images/mexico_.jpg");
 }
 
 .masthead-netherlands::before {
-    background-image: url("/images/amsterdam.jpg");
+    background-image: url("images/amsterdam.jpg");
 }
 
 .masthead-melbourne::before {
-    background-image: url("/images/melbourne.jpg");
+    background-image: url("images/melbourne.jpg");
 }
 
 .masthead-pakistan::before {
-    background-image: url("/images/karachi.jpg");
+    background-image: url("images/karachi.jpg");
 }
 
 .masthead-japan::before {
-    background-image: url("/images/tokyo.jpg");
+    background-image: url("images/tokyo.jpg");
 }
 .masthead-xl .masthead-header:before {
 	height: 100%;
