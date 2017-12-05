@@ -1,191 +1,54 @@
 body {
     background-color: #FFF;
+    font-family: Lato, sans-serif;
+    font-size: 100%;
 }
-
+.banner {
+  color: #0D71B4;
+  font-size: 1.8em;
+  max-width: 20em;
+  margin: auto;
+  text-shadow: 0 0 10px #fff;
+}
 header {
-    position:relative;
-    top:-15px;
+  background: url(https://img.codefor.nl/?url=https://i.imgur.com/rZH3viO.png) bottom left no-repeat,
+              url(https://img.codefor.nl/?url=https://i.imgur.com/rZH3viO.png&rot=180) top right no-repeat;
+}
+header h2 {
+  padding-bottom: 2em;
+}
+.banner em {
+  color: #4DD7FB;
+}
+section h2 {
+  color: #0D71B4 !important;
+  font-size: 1.8em;
+  line-height: 1.4em;
+}
+section p {
+  margin-top: 1em;
+  line-height: 1.6em;
+}
+section p em {
+  color: #0D71B4 !important;
+  font-weight: 900;
 }
 
-.mobile-menu {
-    float:right;
-    display: none;
-    padding-right: 25px;
+.navbar-button {
+  display: block;
+  background: #0D71B4;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  border-radius: 4px;
+  margin: 1em;
+  width: 6em;
 }
-
-@media (max-width: 40em) {
-    .mobile-menu {
-        display: block;
-    }
-    .nav-global-secondary ul {
-        display: none;
-    }
-
+.button.is-link {
+  background: #4DD7FB !important;
 }
-
-a, a:link, a:hover, a:focus, a:active, a:visited {
-  border-bottom: none;
-  border-color: #3A9ED5;
-  color: #3A9ED5;
-}
-
-.nav-global-secondary li a:hover {
-  color: #3A9ED5 !important
-}
-
-.logo-wrap {
-	float: right;
-	width: 300px;
-	text-align: right;
-}
-
-.highlight blockquote, .highlight > p, .highlight blockquote:before
-{
-	color:#000000;
-}
-
-
-@media (min-width: 40em){
-.highlight-with-avatar
-{
-	padding-left: 0;
-}
-}
-
-table a:link, table a:visited, table a:hover, table a:focus, table a:active {
-  color: #3A9ED5;
-  border-bottom: solid 1px;
-
-}
-
-table {
-  background-color: #f1f1f1;
-  width: 100%;
-}
-
-#map {
-	width: 100%;
-	height: 450px;
-}
-
-@media (max-width: 40em) {
-  #map {
-    display: none;
-  }
-}
-
-.slab-red {
-	background-color: #3A9ED5;
-
-}
-.slab-lightblue {
-	background-color: #3A9ED5;
-
-}
-
-.slab-green {
-	background-color: #8FD5E7;
-
-}
-.slab-grey {
-	background-color: #E6E6E6;
-
-}
-.layout-breve {
-	padding: 2.5em;
-}
-
-
-.layout-minor {
-	margin-top: 16px;
-	text-align: center;
-}
-
-.marker {
-	width: 50px;
-	height: 50px;
-	border-radius: 25px;
-	background-color: white;
-}
-
-.marker:hover {
-	width: 100px;
-	height: 100px;
-	border-radius: 50px;
-	background-color: white;
-	position: relative;
-	top:-50px;
-	left:-50px;
-}
-
-td, th {
-  border-bottom: 1px solid #e9e9e9;
-  min-width: 120px;
-  padding: 6px 32px 6px 0;
-  text-align: left;
-  vertical-align: top;
-}
-
-.masthead {
-    height: 400px;
-    background-color: #000;
-}
-
-.masthead:before {
-	height: 100%;
-    min-height: 400px;
-    opacity: 0.4;
-}
-
-.masthead-xl .masthead-header:before {
-    background-image: none;
-}
-
-.masthead-xl .page-title {
-  margin-top: 25px;
-}
-
-.masthead-berlin::before {
-    background-image: url("images/berlin.jpg");
-}
-
-.masthead-sanfrancisco::before {
-    background-image: url("images/sanfrancisco.jpg");
-}
-
-.masthead-warsaw::before {
-    background-image: url("images/warschau.jpg");
-}
-
-.masthead-caribbean::before {
-    background-image: url("images/caribbean_.jpg");
-}
-
-.masthead-mexico::before {
-    background-image: url("images/mexico_.jpg");
-}
-
-.masthead-netherlands::before {
-    background-image: url("images/amsterdam.jpg");
-}
-
-.masthead-melbourne::before {
-    background-image: url("images/melbourne.jpg");
-}
-
-.masthead-pakistan::before {
-    background-image: url("images/karachi.jpg");
-}
-
-.masthead-japan::before {
-    background-image: url("images/tokyo.jpg");
-}
-.masthead-xl .masthead-header:before {
-	height: 100%;
-}
-
-.masthead-header {
-
-    height: 400px;
-
+.navbar-button:hover {
+  color: #fff !important;
+  background-color: #004775 !important;
 }
