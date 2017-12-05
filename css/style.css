@@ -43,7 +43,7 @@ section p em {
   border-bottom: 2px solid #ddd;
   border-radius: 4px;
   margin: 1em;
-  width: 6em;
+  min-width: 6em;
 }
 .button.is-link {
   background: #4DD7FB !important;
