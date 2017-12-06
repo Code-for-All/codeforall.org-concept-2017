@@ -1,7 +1,6 @@
 ---
 title: Chapters
 permalink: chapters
-layout: default
+layout: chapters
 nav: true
 ---
-Chapters here

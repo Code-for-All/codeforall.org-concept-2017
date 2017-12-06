@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+{% include head.html %}
+  <body>
+  {% include header.html %}
+  <section class="section">
+    <nav class="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
+      <ul>
+        <li><a href="{{"/" | relative_url }}">Home</a></li>
+        <li class="is-active"><a href="{{ page.url | relative_url }}">Chapters</a></li>
+      </ul>
+</nav>
+</section>
+<section class="section">
+    {% for item in site.chapters %}
+      <h2><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h2>
+      <p>{{ item.excerpt }}</p>
+    {% endfor %}
+  {% include footer.html %}
+</section>
+  </body>
+</html>

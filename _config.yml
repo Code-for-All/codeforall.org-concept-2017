@@ -1,2 +1,5 @@
 # Site settings
-url: "http://codeforall.org"
+collections:
+  chapters:
+    output: true
+excerpt_separator: <!--more-->
