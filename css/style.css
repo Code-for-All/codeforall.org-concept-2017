@@ -4,15 +4,17 @@ body {
     font-size: 100%;
 }
 .banner {
+  padding-top: 2em;
   color: #0D71B4;
   font-size: 1.8em;
-  max-width: 20em;
-  margin: auto;
   text-shadow: 0 0 10px #fff;
 }
 header {
   background: url(https://img.codefor.nl/?url=https://i.imgur.com/rZH3viO.png) bottom left no-repeat,
               url(https://img.codefor.nl/?url=https://i.imgur.com/rZH3viO.png&rot=180) top right no-repeat;
+}
+header {
+  padding: 0 !important;
 }
 header h2 {
   padding-bottom: 2em;
@@ -44,9 +46,11 @@ section p em {
   border-radius: 4px;
   margin: 1em;
   min-width: 6em;
+  font-variant: all-small-caps;
 }
 .button.is-link {
   background: #4DD7FB !important;
+  font-variant: all-small-caps;
 }
 .navbar-button:hover {
   color: #fff !important;
