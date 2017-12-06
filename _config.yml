@@ -1,1 +1,5 @@
 # Site settings
+collections:
+  chapters:
+    output: true
+excerpt_separator: <!--more-->
