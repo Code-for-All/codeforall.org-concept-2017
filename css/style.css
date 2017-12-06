@@ -2,6 +2,7 @@ body {
     background-color: #FFF;
     font-family: Lato, sans-serif;
     font-size: 100%;
+    padding: 1.5em;
 }
 .banner {
   padding-top: 2em;
@@ -36,7 +37,7 @@ section p em {
   font-weight: 900;
 }
 
-.navbar-button {
+.navbar-button-selected, .navbar-button {
   display: block;
   background: #0D71B4;
   color: white;
@@ -55,4 +56,11 @@ section p em {
 .navbar-button:hover {
   color: #fff !important;
   background-color: #004775 !important;
+}
+.navbar-button-selected {
+  color: #fff !important;
+  background-color: #004775 !important;
+}
+.navbar-button-selected:hover {
+  cursor: default;
 }
