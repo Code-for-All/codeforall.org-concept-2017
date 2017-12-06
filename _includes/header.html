@@ -1,7 +1,7 @@
 <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a href="{{ "/" | absolute_url }}" class="navbar-item">
-      <img src="{{ "/images/code_for_all_logo_small.png" | absolute_url }}">
+    <a href="{{ "/" | relative_url }}" class="navbar-item">
+      <img src="{{ "/images/code_for_all_logo_small.png" | relative_url }}">
     </a>
     <button class="button navbar-burger" data-target="mainmenu">
       <span></span>
@@ -16,7 +16,7 @@
         {% if page.url == node.url %}
           <div class="navbar-item navbar-button-selected">{{node.title}}</div>
         {% else %}
-          <a class="navbar-item navbar-button" href="{{node.url | absolute_url }}">{{node.title}}</a>
+          <a class="navbar-item navbar-button" href="{{node.url | relative_url }}">{{node.title}}</a>
         {% endif %}
         {% endif %}
       {% endfor %}
