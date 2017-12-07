@@ -1,6 +1,18 @@
 {
+  "codeforamerica":{
+    "website": "http://www.codeforamerica.org/",
+    "email": "info@codeforamerica.org",
+    "twitter": "codeforamerica",
+    "github": "codeforamerica",
+    "people": [
+      {"name": "Catherine Bracy", "photo": "avatar-catherine.jpg", "twitter": "cbracy", "role": "Director of Community Organizing"}
+    ]
+  },
   "codeforsa": {
     "website": "http://code4sa.org",
+    "twitter": "code4sa",
+    "github": "code4sa",
+    "meetup": "Code-for-South-Africa-Hackers",
     "people":[
       {"name": "Adi Eyal", "photo": "avatar-adi-eyal.jpg", "twitter": "soapsudtycoon", "role": "Director"},
       {"name": "Greg Kempe", "photo": "avatar-greg-kempe.jpg", "twitter": "longhotsummer", "role": "Principa Technologist"},

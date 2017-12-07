@@ -29,8 +29,13 @@
           </figure>
         </div>
         <div class="media-content">
-          <p class="title is-4">{{ person.name }}</p>
+          <p class="title is-4">{{ person.name }}
+            {% if person.twitter %}
+              <a href="https://twiter.com/{{ person.twitter }}" title="@{{ person.twitter }}"><i class="fa fa-twitter"></i></a>
+            {% endif %}
+          </p>
           <p class="subtitle is-6">{{ person.role }}</p>
+
         </div>
       </div>
     </div>
