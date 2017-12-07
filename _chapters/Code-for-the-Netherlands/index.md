@@ -2,6 +2,7 @@
 layout: chapter
 title: Code For The Netherlands
 permalink: code_for_the_netherlands
+chapter: codefornl
 ---
 Governments and authorities are facing major challenges. Citizens want to be
 informed and be able to use innovative services. Code for NL joins a global

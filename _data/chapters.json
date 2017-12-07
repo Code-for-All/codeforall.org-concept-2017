@@ -18,5 +18,15 @@
       {"name": "Greg Kempe", "photo": "avatar-greg-kempe.jpg", "twitter": "longhotsummer", "role": "Principa Technologist"},
       {"name": "Jennifer Walker", "photo": "avatar-jennifer-walker.jpg", "twitter": "nefiger", "role": "Product and Community Management"}
     ]
+  },
+  "codefornl": {
+    "website": "http://codefor.nl",
+    "twitter": "codefornl",
+    "github": "codefornl",
+    "people":[
+      {"name": "Johan Groenen", "photo": "Facebook_default_male_avatar.gif", "role": "Secretary"},
+      {"name": "Ivonne Jansen-Dings", "photo": "avatar-ivonne.jpg", "role": "Treasurer"},
+      {"name": "Milo van der Linden", "photo": "Facebook_default_male_avatar.gif", "twitter": "miblon", "role": "Chairman"}
+    ]
   }
 }
