@@ -12,8 +12,11 @@
 </nav>
 </section>
 <section class="section">
+
     {% for item in site.chapters %}
+      {% assign chapter = site.data.chapters[item.chapter] %}
       <h2><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h2>
+      {{ chapter.website }}
       <p>{{ item.excerpt }}</p>
     {% endfor %}
   {% include footer.html %}

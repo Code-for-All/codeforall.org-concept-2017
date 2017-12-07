@@ -16,6 +16,10 @@
     <div class="container">
   <h2 class="title">{{ page.title }}</h2>
   {{ content }}
+  {% assign chapter = site.data.chapters[page.chapter] %}
+  {% for person in chapter.people %}
+  {{ person.name }}
+  {% endfor %}
 </div>
 </section>
   {% include footer.html %}

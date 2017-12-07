@@ -1,0 +1,10 @@
+{
+  "codeforsa": {
+    "website": "http://code4sa.org",
+    "people":[
+      {"name": "Adi Eyal", "photo": "avatar-adi-eyal.jpg", "twitter": "soapsudtycoon", "role": "Director"},
+      {"name": "Greg Kempe", "photo": "avatar-greg-kempe.jpg", "twitter": "longhotsummer", "role": "Principa Technologist"},
+      {"name": "Jennifer Walker", "photo": "avatar-jennifer-walker.jpg", "twitter": "nefiger", "role": "Product and Community Management"}
+    ]
+  }
+}
