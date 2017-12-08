@@ -16,6 +16,34 @@
     <div class="container">
   <h2 class="title">{{ page.title }}</h2>
   {{ content }}
+  {% assign chapter = site.data.chapters[page.chapter] %}
+  {% if chapter.people %}
+  <h2>People</h2>
+  {% for person in chapter.people %}
+  <div class="card">
+    <div class="card-content">
+      <div class="media">
+        <div class="media-left">
+          <figure class="image is-96x96">
+            <img src="{{ "/images/" | relative_url }}{{ person.photo }}"/>
+          </figure>
+        </div>
+        <div class="media-content">
+          <p class="title is-4">{{ person.name }}
+            {% if person.twitter %}
+              <a href="https://twiter.com/{{ person.twitter }}" title="@{{ person.twitter }}"><i class="fa fa-twitter"></i></a>
+            {% endif %}
+          </p>
+          <p class="subtitle is-6">{{ person.role }}</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  {% endfor %}
+  {% endif %}
 </div>
 </section>
   {% include footer.html %}

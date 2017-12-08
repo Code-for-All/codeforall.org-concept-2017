@@ -1,0 +1,32 @@
+{
+  "codeforamerica":{
+    "website": "http://www.codeforamerica.org/",
+    "email": "info@codeforamerica.org",
+    "twitter": "codeforamerica",
+    "github": "codeforamerica",
+    "people": [
+      {"name": "Catherine Bracy", "photo": "avatar-catherine.jpg", "twitter": "cbracy", "role": "Director of Community Organizing"}
+    ]
+  },
+  "codeforsa": {
+    "website": "http://code4sa.org",
+    "twitter": "code4sa",
+    "github": "code4sa",
+    "meetup": "Code-for-South-Africa-Hackers",
+    "people":[
+      {"name": "Adi Eyal", "photo": "avatar-adi-eyal.jpg", "twitter": "soapsudtycoon", "role": "Director"},
+      {"name": "Greg Kempe", "photo": "avatar-greg-kempe.jpg", "twitter": "longhotsummer", "role": "Principa Technologist"},
+      {"name": "Jennifer Walker", "photo": "avatar-jennifer-walker.jpg", "twitter": "nefiger", "role": "Product and Community Management"}
+    ]
+  },
+  "codefornl": {
+    "website": "http://codefor.nl",
+    "twitter": "codefornl",
+    "github": "codefornl",
+    "people":[
+      {"name": "Johan Groenen", "photo": "Facebook_default_male_avatar.gif", "role": "Secretary"},
+      {"name": "Ivonne Jansen-Dings", "photo": "avatar-ivonne.jpg", "role": "Treasurer"},
+      {"name": "Milo van der Linden", "photo": "Facebook_default_male_avatar.gif", "twitter": "miblon", "role": "Chairman"}
+    ]
+  }
+}
