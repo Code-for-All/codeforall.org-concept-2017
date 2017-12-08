@@ -1,7 +1,12 @@
-<section class="section">
+<footer class="footer">
   <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        <small>Code For All, all rights reserved. Content licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY SA 4.0</a>.</small>
+      </p>
+    </div>
   </div>
-</section>
+</footer>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
 
@@ -31,9 +36,9 @@
 </script>
 {% include scripts.html %}
 {% if page.js == "map" %}
-<script src="./js/map.js"></script>
+<script src="{{ '/assets/js/map.js' | relative_url }}"></script>
 {% endif %}
 
 {% if page.js == "projects" %}
-<script src="./js/projects.js"></script>
+<script src="{{ '/assets/js/projects.js' | relative_url }}"></script>
 {% endif %}

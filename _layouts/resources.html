@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+{% include head.html %}
+  <body>
+  {% include header.html %}
+  <section class="section">
+    <nav class="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
+      <ul>
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li class="is-active"><a href="{{ page.url | relative_url }}">Resources</a></li>
+      </ul>
+    </nav>
+  </section>
+  <section class="section">
+    <div class="container">
+      <figure class="image">
+        <img src="{{ '/assets/images/8062-TS-0963.jpg' | relative_url }}">
+      </figure>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      {% assign i = 0 %}
+      {% assign resources = site.data.resources %}
+      <ul>
+      {% for item in resources %}
+        {% if i == 0 %}
+          <div class="tile is-ancestor">
+        {% endif %}
+            <div class="tile is-parent">
+              <article class="tile is-child notification {{item.type}}">
+                {% assign i = i | plus: 1 %}
+                <a href="{{ item.website }}">{{ item.name }}</a>
+              </article>
+            </div>
+        {% if i == 4 %}
+        {% assign i = 0 %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+{% include footer.html %}
+  </body>
+</html>

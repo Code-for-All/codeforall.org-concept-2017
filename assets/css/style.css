@@ -75,3 +75,32 @@ section p em {
 .navbar-button-selected:hover {
   cursor: default;
 }
+.footer{
+  color: #ccc;
+  padding: 1rem 1.5rem 1rem !important;
+  background-color: transparent !important;
+}
+.case_study {
+  background: #eee;
+  color: #000;
+}
+
+.toolkit {
+  background: hsl(204, 86%, 53%);
+  color: #fff;
+}
+.principles {
+  background: hsl(141, 71%, 48%);
+  color: #fff;
+}
+.annual_report {
+  background: hsl(48, 100%, 67%);
+  color: #000;
+}
+.standard {
+  background: hsl(0, 0%, 21%);
+  color: #fff;
+}
+figure figcaption {
+    font-style: italic;
+}
