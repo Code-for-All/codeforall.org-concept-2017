@@ -9,31 +9,53 @@
         <li><a href="{{"/" | relative_url }}">Home</a></li>
         <li class="is-active"><a href="{{ page.url | relative_url }}">Chapters</a></li>
       </ul>
-</nav>
-</section>
-<section class="section">
+    </nav>
+  </section>
+  <section class="section">
+    <!--<div class="worldmap"></div>-->
+  </section>
+  <section class="section">
+    <div class="container">
 
-    {% for item in site.chapters %}
-      {% assign chapter = site.data.chapters[item.chapter] %}
-      <h2><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h2>
-      {% if chapter.twitter %}
-        <a href="https://twiter.com/{{ chapter.twitter }}" title="@{{ chapter.twitter }}"><i class="fa fa-twitter"></i></a>&nbsp;
-      {% endif %}
-      {% if chapter.website %}
-        <a href="{{ chapter.website }}" title="{{ chapter.website }}"><i class="fa fa-globe"></i></a>&nbsp;
-      {% endif %}
-      {% if chapter.github %}
-        <a href="https://github.com/{{ chapter.github }}" title="{{ chapter.github }}"><i class="fa fa-github"></i></a>&nbsp;
-      {% endif %}
-      {% if chapter.email %}
-        <a href="mailto://{{ chapter.email }}" title="{{ chapter.email }}"><i class="fa fa-envelope"></i></a>&nbsp;
-      {% endif %}
-      {% if chapter.meetup %}
-        <a href="https://meetup.com/{{ chapter.meetup }}" title="{{ chapter.meetup }}"><i class="fa fa-meetup"></i></a>&nbsp;
-      {% endif %}
-      <p>{{ item.excerpt }}</p>
-    {% endfor %}
-  {% include footer.html %}
+      {% assign i = 0 %}
+      {% for item in site.chapters %}
+        {% if i == 0 %}
+        <div class="tile is-ancestor">
+
+        {% endif %}
+          <div class="tile is-parent">
+            <article class="tile is-child">
+              {% assign i = i | plus: 1 %}
+              {% assign chapter = site.data.chapters[item.chapter] %}
+              <h3><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
+              {{ item.excerpt }}
+
+              {% if chapter.twitter %}
+                <a href="https://twiter.com/{{ chapter.twitter }}" title="@{{ chapter.twitter }}"><i class="fa fa-twitter"></i></a>&nbsp;
+              {% endif %}
+              {% if chapter.website %}
+                <a href="{{ chapter.website }}" title="{{ chapter.website }}"><i class="fa fa-globe"></i></a>&nbsp;
+              {% endif %}
+              {% if chapter.github %}
+                <a href="https://github.com/{{ chapter.github }}" title="{{ chapter.github }}"><i class="fa fa-github"></i></a>&nbsp;
+              {% endif %}
+              {% if chapter.email %}
+                <a href="mailto://{{ chapter.email }}" title="{{ chapter.email }}"><i class="fa fa-envelope"></i></a>&nbsp;
+              {% endif %}
+              {% if chapter.meetup %}
+                <a href="https://meetup.com/{{ chapter.meetup }}" title="{{ chapter.meetup }}"><i class="fa fa-meetup"></i></a>&nbsp;
+              {% endif %}
+            </article>
+          </div>
+        {% if i == 3 %}
+          {% assign i = 0 %}
+
+        </div>
+        {% endif %}
+      {% endfor %}
+
+  </div>
 </section>
+{% include footer.html %}
   </body>
 </html>
