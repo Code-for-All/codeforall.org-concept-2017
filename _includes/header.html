@@ -11,10 +11,17 @@
   </div>
   <div class="navbar-menu" id="mainmenu">
     <div class="navbar-end">
+      {%if page.url == '/' %}
+      <div class="navbar-item navbar-button selected"><i class="fa fa-home"></i></div>
+      {% else %}
+      <a class="navbar-item navbar-button" href="{{ '/' | relative_url }}" title="home">
+        <i class="fa fa-home"></i>
+      </a>
+      {% endif %}
       {% for node in site.pages %}
         {% if node.nav %}
         {% if page.url == node.url %}
-          <div class="navbar-item navbar-button-selected">{{node.title}}</div>
+          <div class="navbar-item navbar-button selected">{{node.title}}</div>
         {% else %}
           <a class="navbar-item navbar-button" href="{{node.url | relative_url }}">{{node.title}}</a>
         {% endif %}

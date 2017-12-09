@@ -1,7 +1,8 @@
 ---
 layout: chapter
 title: Code For Mexico
-permalink: code_for_mexico
+permalink: code-for-mexico
+chapter: codeando-méxico
 ---
 Big City. Big Change.
 <!--more-->

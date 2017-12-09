@@ -10,80 +10,82 @@ $(document).ready(function() {
     var orgs = response;
     var cfallOrgs = [];
     orgs.features.forEach(function(org) {
-      if (org.properties.type.indexOf("Code for All") != -1){
 
+      if (org.properties.type.indexOf("Code for All") != -1){
+          console.log(org.id.toLowerCase());
           org.properties.icon = {}
+          org.properties.icon.iconSize = [38, 38]
           org.properties.icon['className'] = 'marker'
           org.properties.icon['iconAnchor'] = [0, 25]
 
         if (org.properties['name'] == 'Code for America'){
-          org.properties.icon['iconUrl'] = "images/cfamerica.png"
+          org.properties.icon['iconUrl'] = base_url + "images/cfamerica.png"
         }
         if (org.properties['name'] == 'Codigo para la Ciudad de Mexico'){
-          org.properties.icon['iconUrl'] = "images/labplc.jpeg"
+          org.properties.icon['iconUrl'] = base_url + "images/labplc.jpeg"
         }
         if (org.properties['name'] == 'Code for the Caribbean'){
-          org.properties.icon['iconUrl'] = "images/cfcaribbean.png"
+          org.properties.icon['iconUrl'] = base_url + "images/cfcaribbean.png"
         }
         if (org.properties['name'] == 'Code for Africa'){
-          org.properties.icon['iconUrl'] = "images/cfafrica.png"
+          org.properties.icon['iconUrl'] = base_url + "images/cfafrica.png"
         }
         if (org.properties['name'] == 'Code for South Africa'){
-          org.properties.icon['iconUrl'] = "images/cfsa.png"
+          org.properties.icon['iconUrl'] = base_url + "images/cfsa.png"
         }
         if (org.properties['name'] == 'Code for Kenya'){
-          org.properties.icon['iconUrl'] = "images/cfke.png"
+          org.properties.icon['iconUrl'] = base_url + "images/cfke.png"
         }
         if (org.properties['name'] == 'Code for Nigeria'){
-          org.properties.icon['iconUrl'] = "images/cfng.png"
+          org.properties.icon['iconUrl'] = base_url + "images/cfng.png"
         }
         if (org.properties['name'] == 'Code for Ghana'){
-          org.properties.icon['iconUrl'] = "images/cfgh.png"
+          org.properties.icon['iconUrl'] = base_url + "images/cfgh.png"
         }
         if (org.properties['name'] == 'Code for Ireland'){
-          org.properties.icon['iconUrl'] = "images/cfireland.png"
+          org.properties.icon['iconUrl'] = base_url + "images/cfireland.png"
         }
         if (org.properties['name'] == 'Code for Germany'){
-          org.properties.icon['iconUrl'] = "images/cfgermany.jpeg"
+          org.properties.icon['iconUrl'] = base_url + "images/cfgermany.jpeg"
         }
         if (org.properties['name'] == 'Code for Poland'){
-          org.properties.icon['iconUrl'] = "images/cfpoland.svg"
+          org.properties.icon['iconUrl'] = base_url + "images/cfpoland.svg"
         }
         if (org.properties['name'] == 'Code for Pakistan'){
-          org.properties.icon['iconUrl'] = "images/cfpakistan.png"
+          org.properties.icon['iconUrl'] = base_url + "images/cfpakistan.png"
         }
         if (org.properties['name'] == 'Code for Seoul'){
-          org.properties.icon['iconUrl'] = "images/cfseoul.png"
+          org.properties.icon['iconUrl'] = base_url + "images/cfseoul.png"
         }
         if (org.properties['name'] == 'Code for Japan'){
-          org.properties.icon['iconUrl'] = "images/cfjapan.png"
+          org.properties.icon['iconUrl'] = base_url + "images/cfjapan.png"
         }
         if (org.properties['name'] == 'Code for Australia'){
-          org.properties.icon['iconUrl'] = "images/cfaustralia.jpeg"
+          org.properties.icon['iconUrl'] = base_url + "images/cfaustralia.jpeg"
         }
         if (org.properties['name'] == 'g0v.tw'){
-          org.properties.icon['iconUrl'] = "images/g0v.png"
+          org.properties.icon['iconUrl'] = base_url + "images/g0v.png"
         }
         if (org.properties['name'] == 'Codeando México'){
-          org.properties.icon['iconUrl'] = "images/cfmexico.png"
+          org.properties.icon['iconUrl'] = base_url + "images/cfmexico.png"
         }
         if (org.properties['name'] == 'Code for Ghana'){
-          org.properties.icon['iconUrl'] = "images/ghana.png"
+          org.properties.icon['iconUrl'] = base_url + "images/ghana.png"
         }
         if (org.properties['name'] == 'Code for Nigeria'){
-          org.properties.icon['iconUrl'] = "images/nigeria.png"
+          org.properties.icon['iconUrl'] = base_url + "images/nigeria.png"
         }
         if (org.properties['name'] == 'Code for Kenya'){
-          org.properties.icon['iconUrl'] = "images/kenya.png"
+          org.properties.icon['iconUrl'] = base_url + "images/kenya.png"
         }
         if (org.properties['name'] == 'Code for Africa'){
-          org.properties.icon['iconUrl'] = "images/c4africa.png"
+          org.properties.icon['iconUrl'] = base_url + "images/c4africa.png"
         }
         if (org.properties['name'] == 'Code for Tomorrow'){
-          org.properties.icon['iconUrl'] = "images/cftomorrow.png"
+          org.properties.icon['iconUrl'] = base_url + "images/cftomorrow.png"
         }
         if (org.properties['name'] == 'CodeNamu(Code for Korea)'){
-          org.properties.icon['iconUrl'] = "images/codenamu.png"
+          org.properties.icon['iconUrl'] = base_url + "images/codenamu.png"
         }
 
         cfallOrgs.push(org);
@@ -97,7 +99,7 @@ $(document).ready(function() {
   function showMap(cfallOrgs){
     // codeforamerica.j113mi4d - code for all
     // codeforamerica.map-hhckoiuj - brigade
-    var map = L.mapbox.map('map', 'codeforamerica.map-hhckoiuj',
+    var map = L.mapbox.map('map', 'codeforamerica.j113mi4d',
     {
       scrollWheelZoom:false
     });
@@ -116,9 +118,17 @@ $(document).ready(function() {
     });
 
     featureLayer.addTo(map);
-
+    featureLayer.on('mouseover', function(e){
+      $('#' + e.layer.feature.id.toLowerCase()).addClass("map-highlight");
+      $('#map-info').text(e.layer.feature.properties.name);
+    });
+    featureLayer.on('mouseout', function(e){
+      $('#' + e.layer.feature.id.toLowerCase()).removeClass("map-highlight");
+      $('#map-info').html("&nbsp;");
+    });
     featureLayer.on('click', function(e) {
-      window.open(e.layer.feature.properties.website);
+      $('#map-info').text(e.layer.feature.properties.name);
+      $('#' + e.layer.feature.id.toLowerCase()).addClass("map-highlight");
     });
 
   };

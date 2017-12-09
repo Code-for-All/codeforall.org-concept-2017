@@ -10,7 +10,14 @@
       </ul>
     </nav>
     <section class="section">
-      <!--<div class="worldmap"></div>-->
+      <div class="container">
+        <div id="map"></div>
+        <div class="level">
+          <p class="level-item has-text-centered">
+            <span id="map-info">&nbsp;</span>
+          </p>
+        </div>
+      </div>
     </section>
     <section class="section">
       <div class="container">
@@ -22,7 +29,7 @@
 
             {% endif %}
               <div class="tile is-parent">
-                <article class="tile is-child">
+                <article id="{{ item.chapter }}" class="tile is-child box">
                   {% assign i = i | plus: 1 %}
                   {% assign chapter = site.data.chapters[item.chapter] %}
                   <h3><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
@@ -51,7 +58,11 @@
             </div>
             {% endif %}
           {% endfor %}
+          {% if i != 3 %}
+            {% assign i = 0 %}
 
+          </div>
+          {% endif %}
       </div>
     </section>
     {% include footer.html %}

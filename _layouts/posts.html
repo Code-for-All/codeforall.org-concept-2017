@@ -3,27 +3,25 @@
 {% include head.html %}
   <body>
   {% include header.html %}
-  <section class="section">
     <nav class="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
       <ul>
         <li><a href="{{ '/' | relative_url }}">Home</a></li>
         <li class="is-active"><a href="{{ page.url | relative_url }}">Blog</a></li>
       </ul>
     </nav>
-  </section>
-  <section class="section">
-    <div class="container">
-      {% for post in site.posts %}
-      <article class="post">
-        <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-        <div class="entry">
-          {{ post.excerpt }}
-        </div>
-        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-      </article>
-      {% endfor %}
-    </div>
-  </section>
-  {% include footer.html %}
+    <section class="section">
+      <div class="container">
+        {% for post in site.posts %}
+        <article class="post">
+          <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+          <div class="entry">
+            {{ post.excerpt }}
+          </div>
+          <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+        </article>
+        {% endfor %}
+      </div>
+    </section>
+    {% include footer.html %}
   </body>
 </html>

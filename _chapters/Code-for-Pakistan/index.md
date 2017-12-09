@@ -1,7 +1,8 @@
 ---
 layout: chapter
 title: Code For Pakistan
-permalink: code_for_pakistan
+permalink: code-for-pakistan
+chapter: code-for-pakistan
 ---
 To elevate the quality of civic life in Pakistan.
 <!--more-->

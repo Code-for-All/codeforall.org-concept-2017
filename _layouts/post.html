@@ -3,7 +3,6 @@
 {% include head.html %}
   <body>
   {% include header.html %}
-  <section class="section">
     <nav class="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
       <ul>
         <li><a href="{{ '/' | relative_url }}">Home</a></li>
@@ -11,20 +10,19 @@
         <li class="is-active"><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
       </ul>
     </nav>
-  </section>
-  <section class="section">
-    <div class="container">
-    <article class="post">
-      <div class="entry">
-        {{ content }}
-      </div>
+    <section class="section">
+      <div class="container">
+      <article class="post">
+        <div class="entry">
+          {{ content }}
+        </div>
 
-      <div class="date">
-        Written on {{ page.date | date: "%B %e, %Y" }}
+        <div class="date">
+          Written on {{ page.date | date: "%B %e, %Y" }}
+        </div>
+      </article>
       </div>
-    </article>
-    </div>
-  </section>
-  {% include footer.html %}
+    </section>
+    {% include footer.html %}
   </body>
 </html>

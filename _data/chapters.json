@@ -1,5 +1,5 @@
 {
-  "codeforamerica":{
+  "code-for-america":{
     "website": "http://www.codeforamerica.org/",
     "email": "info@codeforamerica.org",
     "twitter": "codeforamerica",
@@ -16,7 +16,7 @@
       }
     ]
   },
-  "codeforsa": {
+  "code-for-south-africa": {
     "website": "http://code4sa.org",
     "twitter": "code4sa",
     "github": "code4sa",
@@ -27,7 +27,7 @@
       {"name": "Jennifer Walker", "photo": "avatar-jennifer-walker.jpg", "twitter": "nefiger", "role": "Product and Community Management"}
     ]
   },
-  "codefornl": {
+  "code-for-the-netherlands": {
     "website": "http://codefor.nl",
     "twitter": "codefornl",
     "github": "codefornl",
@@ -37,7 +37,7 @@
       {"name": "Milo van der Linden", "photo": "Facebook_default_male_avatar.gif", "twitter": "miblon", "role": "Chairman"}
     ]
   },
-  "codeforaustralia":{
+  "code-for-australia":{
     "email": "info@codeforaustralia.org",
     "twitter": "codeforaus",
     "github": "codeforaustralia",
@@ -68,7 +68,7 @@
       }
     ]
   },
-  "codeforde": {
+  "code-for-germany": {
     "website": "http://codefor.de",
     "email": "info@codefor.de",
     "twitter": "codeforde",
