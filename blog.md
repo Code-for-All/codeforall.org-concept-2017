@@ -1,7 +1,6 @@
 ---
 title: Blog
 permalink: blog
-layout: default
+layout: posts
 nav: true
 ---
-Blog here
