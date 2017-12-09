@@ -41,7 +41,7 @@ section p em {
   color: #0D71B4 !important;
   font-weight: 900;
 }
-.map-highlight {
+.map-highlight > article {
   box-shadow: 0 2px 3px rgba(13, 113, 180, 1), 0 0 0 1px rgba(13, 113, 180, 1) !important;
 }
 .map-highlight h3 {
