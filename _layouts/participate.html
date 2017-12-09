@@ -2,39 +2,36 @@
 <html class="has-navbar-fixed-top">
 {% include head.html %}
   <body>
-  {% include header.html %}
-  <section class="section">
+    {% include header.html %}
     <nav class="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
       <ul>
         <li><a href="{{ '/' | relative_url }}">Home</a></li>
         <li class="is-active"><a href="{{ page.url | relative_url }}">Join us</a></li>
       </ul>
     </nav>
-  </section>
-  <section class="section">
-    <div class="container">
-      <figure class="image">
-        <img src="{{ '/assets/images/015_8038_TS_0015.jpg' | relative_url }}">
-      </figure>
-    </div>
-  </section>
-  <section class="section">
-    <div class="container">
-      {{ content }}
-    </div>
+    <section class="section">
+      <div class="container">
+        <figure class="image">
+          <img src="{{ '/assets/images/015_8038_TS_0015.jpg' | relative_url }}">
+        </figure>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        {{ content }}
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <figure class="image">
+          <img src="{{ '/assets/images/017_8038_TS_0017.jpg' | relative_url }}">
+          <figcaption>
+            Captains from Code for Australia at the Code for America Summit, 2014.
+          </figcaption>
+        </figure>
 
-  </section>
-  <section class="section">
-    <div class="container">
-      <figure class="image">
-        <img src="{{ '/assets/images/017_8038_TS_0017.jpg' | relative_url }}">
-        <figcaption>
-          Captains from Code for Australia at the Code for America Summit, 2014.
-        </figcaption>
-      </figure>
-
-    </div>
-  </section>
-  {% include footer.html %}
-    </body>
-  </html>
+      </div>
+    </section>
+    {% include footer.html %}
+  </body>
+</html>

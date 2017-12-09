@@ -5,7 +5,15 @@
     "twitter": "codeforamerica",
     "github": "codeforamerica",
     "people": [
-      {"name": "Catherine Bracy", "photo": "avatar-catherine.jpg", "twitter": "cbracy", "role": "Director of Community Organizing"}
+      {
+        "name": "Catherine Bracy",
+        "photo": "avatar-catherine.jpg",
+        "twitter": "cbracy",
+        "linkedin": "catherinebracy",
+        "website": "http://cbracy.tumblr.co",
+        "role": "Director of Community Organizing",
+        "bio": "Catherine Bracy (Director of Community Organizing) Until November 2012, she was a product manager and director of the Obama campaign’s technology field office in San Francisco, the first of its kind in American political history. In that role she was responsible for organizing technologists to volunteer their skills to the campaign’s technology and digital efforts. Prior to joining the campaign, she ran the Knight Foundation’s 2011 News Challenge and before that was the administrative director at Harvard’s Berkman Center for Internet & Society. She is on the board of directors at the Citizen Engagement Lab and the Public Laboratory."
+      }
     ]
   },
   "codeforsa": {
@@ -27,6 +35,66 @@
       {"name": "Johan Groenen", "photo": "Facebook_default_male_avatar.gif", "role": "Secretary"},
       {"name": "Ivonne Jansen-Dings", "photo": "avatar-ivonne.jpg", "role": "Treasurer"},
       {"name": "Milo van der Linden", "photo": "Facebook_default_male_avatar.gif", "twitter": "miblon", "role": "Chairman"}
+    ]
+  },
+  "codeforaustralia":{
+    "email": "info@codeforaustralia.org",
+    "twitter": "codeforaus",
+    "github": "codeforaustralia",
+    "website": "http://www.codeforaustralia.org/",
+    "people": [
+      { "name": "Alvaro Maz",
+        "photo": "avatar-alvaro.jpg",
+        "role": "Executive Director",
+        "bio": "Alvaro is one of the co-founders of Code for Australia and Executive Director. He spent his early career working in international development, urban planning and housing, and now is a devoted innovator in the public and social space. He’s also learning how to play the Ukulele.",
+        "website": "http://alvaromaz.branded.me",
+        "twitter": "alvaromaz",
+        "linkedin": "alvaromaz"
+      },
+      {
+        "name": "Jacob Lindsay",
+        "photo": "avatar-jacob.jpg",
+        "bio": "Jake completed his honors in Design specialising in Landscape Architecture in Melbourne. For the past 5 years he has worked at the intersection of digital media and urban design, improving our cities and urban experience. When he is at home, he enjoys living amongst bike parts from various decades, a fridge stocked with cheese and his sidekick-cat Maximus.",
+        "twitter": "_jakelindsay",
+        "linkedin": "jlindsay2"
+      },
+      {
+        "name": "Chris D’Aloisio",
+        "photo": "avatar-chrisd.jpg",
+        "bio": "Chris grew up pursuing two main interests: music and technology. His studies through high school consisted of majoring in piano and trumpet, whilst spending his spare time learning new programming languages and experimenting with the web. He now runs multiple digital projects, including one where technology and music intersect.",
+        "website": "http://chrisdaloisio.com",
+        "twitter": "chrisdaloisio",
+        "github": "cdaloisio"
+      }
+    ]
+  },
+  "codeforde": {
+    "website": "http://codefor.de",
+    "email": "info@codefor.de",
+    "twitter": "codeforde",
+    "people": [
+      {
+        "name": "Julia Kloiber",
+        "photo": "avatar-julia.jpg",
+        "bio": "Julia is Project Lead at the Open Knowledge Foundation Germany. She has a background in design and media theory and works on civic tech and open data projects. Her latest projects include a civic tech incubator “Stadt Land Code” and the community program “Code for Germany”. She is working closely with governments and companies on open data projects and strategies.",
+        "website": "http://juliakloiber.com",
+        "twitter": "j_kloiber"
+      },
+      {
+        "name": "Fiona Krakenbürger",
+        "photo": "avatar-fiona.jpg",
+        "bio": "Fiona Krakenbürger is the Community Organizer in the program Code for Germany. She supports and manages a community of 200 volunteer developers, designers and storytellers across Germany, that build Civic Tech, Apps and Visualizations with Open Data. Ms Krakenbürger has a background in European Ethnology and has been active as an advocate of digital literacy in Germany for several years.",
+        "website": "http://arduina.github.io/arduina.net/",
+        "twitter": "fotografiona"
+      },
+      {
+        "name": "Daniel Dietrich",
+        "photo": "avatar-danield.jpg",
+        "bio": "Daniel lives, dreams and works (only if needed) in Berlin. He is an open data and transparency evangelist, media activists, artists, anarchists, interdependent thinker and universal dilettante, a researcher on communications, utopia and futurism.",
+        "website": "http://ddie.me",
+        "linkedin": "ddietrich",
+        "twitter": "ddie"
+      }
     ]
   }
 }
