@@ -21,7 +21,6 @@
     </section>
     <section class="section">
       <div class="container">
-
           {% assign i = 0 %}
           {% assign j = 1 %}
           {% for item in site.chapters %}
@@ -34,22 +33,8 @@
                   {% assign chapter = site.data.chapters[item.chapter] %}
                   <h3><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
                   {{ item.excerpt }}
-
-                  {% if chapter.twitter %}
-                    <a href="https://twiter.com/{{ chapter.twitter }}" title="@{{ chapter.twitter }}"><i class="fa fa-twitter"></i></a>&nbsp;
-                  {% endif %}
-                  {% if chapter.website %}
-                    <a href="{{ chapter.website }}" title="{{ chapter.website }}"><i class="fa fa-globe"></i></a>&nbsp;
-                  {% endif %}
-                  {% if chapter.github %}
-                    <a href="https://github.com/{{ chapter.github }}" title="{{ chapter.github }}"><i class="fa fa-github"></i></a>&nbsp;
-                  {% endif %}
-                  {% if chapter.email %}
-                    <a href="mailto://{{ chapter.email }}" title="{{ chapter.email }}"><i class="fa fa-envelope"></i></a>&nbsp;
-                  {% endif %}
-                  {% if chapter.meetup %}
-                    <a href="https://meetup.com/{{ chapter.meetup }}" title="{{ chapter.meetup }}"><i class="fa fa-meetup"></i></a>&nbsp;
-                  {% endif %}
+                  {% assign social = chapter %}
+                  {% include social.html %}
                 </article>
               </div>
             {% if i == 3 %}

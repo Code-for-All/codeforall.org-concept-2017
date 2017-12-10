@@ -36,25 +36,8 @@
                 {% endif %}
               </p>
             </div>
-            <nav class="level is-mobile">
-              <div class="level-left">
-                {% if person.twitter %}
-                <a class="level-item" href="https://twiter.com/{{ person.twitter }}" title="@{{ person.twitter }}">
-                  <span class="icon is-small"><i class="fa fa-twitter"></i></span>
-                </a>
-                {% endif %}
-                {% if person.linkedin %}
-                <a class="level-item" href="https://linkedin.com/in/{{ person.linkedin }}" title="@{{ person.linkedin }}">
-                  <span class="icon is-small"><i class="fa fa-linkedin"></i></span>
-                </a>
-                {% endif %}
-                {% if person.github %}
-                <a class="level-item" href="https://github.com/{{ person.github }}" title="@{{ person.github }}">
-                  <span class="icon is-small"><i class="fa fa-github"></i></span>
-                </a>
-                {% endif %}
-              </div>
-            </nav>
+            {% assign social = person %}
+            {% include social.html %}
           </div>
         </article>
         {% endfor %}
