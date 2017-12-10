@@ -2,4 +2,6 @@
 collections:
   chapters:
     output: true
+  projects:
+    output: true
 excerpt_separator: <!--more-->

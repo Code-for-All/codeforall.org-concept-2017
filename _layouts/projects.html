@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+{% include head.html %}
+  <body>
+  {% include header.html %}
+    <nav class="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
+      <ul>
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li class="is-active"><a href="{{ page.url | relative_url }}">Projects</a></li>
+      </ul>
+    </nav>
+    <section class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <table id="cfa-listings">
+        <thead>
+          <tr>
+            <th>Organization</th>
+            <th>Latest Project</th>
+            <!-- <th>Upcoming Event</th> -->
+          </tr>
+        </thead>
+        </table>
+      </div>
+      <p>Find more using the <a href="http://codeforamerica.org/geeks/civicissues">Civic Tech Issue Finder</a>.</p>
+    </section>
+    {% include footer.html %}
+  </body>
+</html>

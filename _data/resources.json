@@ -1,0 +1,85 @@
+[
+  {
+    "link": {
+      "url": "http://www.codeforamerica.org/about/international/2013-annual-report/",
+      "type": "globe"
+    },
+    "name": "Annual Report",
+    "type": "annual_report",
+    "year": 2013
+  },
+  {
+    "link": {
+      "url": "http://www.codeforamerica.org/about/international/2012-annual-report/",
+      "type": "globe"
+    },
+    "name": "Annual Report",
+    "type": "annual_report",
+    "year": 2012
+  },
+  {
+    "link": {
+      "url": "http://www.codeforamerica.org/about/international/2011-annual-report/",
+      "type": "globe"
+    },
+    "name": "Annual Report",
+    "type": "annual_report",
+    "year": 2011
+  },
+  {
+    "link": {
+      "url": "http://www.codeforamerica.org/media/docs/codeforall/cftc-casestudy.pdf",
+      "type": "globe"
+    },
+    "name": "Code For the Caribbean Case Study",
+    "type": "case_study"
+  },
+  {
+    "link": {
+      "url": "http://www.codeforamerica.org/media/docs/codeforall/cfmc-casestudy.pdf",
+      "type": "file-pdf-o"
+    },
+    "name": "Code For Mexico City Case Study",
+    "type": "case_study"
+  },
+  {
+    "link": {
+      "url": "http://www.codeforamerica.org/media/docs/codeforall/cfg-casestudy.pdf",
+      "type": "file-pdf-o"
+    },
+    "name": "Code For Germany Case Study",
+    "type": "case_study"
+  },
+  {
+    "link": {
+      "url": "http://www.codeforamerica.org/playbooks/fellowship/toolkit/",
+      "type": "globe"
+    },
+    "name": "Code For America Fellowship Toolkit",
+    "type": "toolkit"
+  },
+  {
+    "link": {
+      "url": "http://www.codeforamerica.org/governments/principles/",
+      "type": "globe"
+    },
+    "name": "Code For America Principles for Digital Government",
+    "type": "principles"
+  },
+  {
+    "link": {
+      "url": "http://www.codeforamerica.org/governments/principles/engagement/",
+      "type": "globe"
+    },
+    "name": "Code For America Engagement Standards",
+    "type": "standard"
+  },
+  {
+    "link": {
+      "url": "http://www.codeforamerica.org/brigade/tools/",
+      "type": "globe"
+    },
+    "name": "Code For America Brigade Toolkit",
+    "type": "toolkit"
+  }
+]
