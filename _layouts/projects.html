@@ -12,17 +12,47 @@
     <section class="section">
       <div class="container">
         <h2>Projects</h2>
+        {% assign organizations = site.data.organizations.objects %}
+        <table class="table is-striped is-narrow is-fullwidth">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Description</th>
+              <th class="is-hidden-mobile">Organization</th>
+            </tr>
+          </thead>
+          <tbody>
+        {% for organization in organizations %}
+          {% assign projects = organization.current_projects %}
+              {% for project in projects %}
+              <tr class="{{ project.commit_status }}">
+                <td><a href="{{ project.code_url }}">{{ project.name }}</a></td>
+                <td>{{ project.description }}</td>
+                <td class="is-hidden-mobile"><a href="{{ '/' | relative_url}}{{ organization.id | downcase }}">{{ organization.name }}</a></td>
+              </tr>
+              {% endfor %}
+
+            {% endfor %}
+            </tbody>
+          </table>
+        <!--
         <table id="cfa-listings">
         <thead>
           <tr>
             <th>Organization</th>
             <th>Latest Project</th>
-            <!-- <th>Upcoming Event</th> -->
+            <th>Upcoming Event</th>
           </tr>
         </thead>
         </table>
+        -->
+
       </div>
-      <p>Find more using the <a href="http://codeforamerica.org/geeks/civicissues">Civic Tech Issue Finder</a>.</p>
+    </section>
+    <section class="section">
+      <div class="container">
+        <p>Find more using the <a href="http://codeforamerica.org/geeks/civicissues">Civic Tech Issue Finder</a>.</p>
+      </div>
     </section>
     {% include footer.html %}
   </body>

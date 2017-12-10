@@ -51,6 +51,18 @@ section p em {
   height: 400px;
 
 }
+tr.pending {
+  background-color: whitesmoke !important;
+}
+tr.success {
+  background-color: #23d160 !important;
+  color: #fff !important;
+}
+
+tr.failure {
+  background-color: #ff3860 !important;
+  color: #fff !important;
+}
 .navbar-button {
   font-variant: small-caps;
 }
