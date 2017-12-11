@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: Code For The Caribbean
-permalink: code-for-the-caribbean
+permalink: chapters/code-for-the-caribbean
 chapter: code-for-the-caribbean
 ---
 Helping to bring civic innovation to the core of governance.

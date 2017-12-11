@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: Code For Japan
-permalink: code-for-japan
+permalink: chapters/code-for-japan
 chapter: code-for-japan
 ---
 “Think together, create together” - We encourage citizens and governments to share ideas and solutions with an open mind for making future cities.

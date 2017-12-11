@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: Code For The Netherlands
-permalink: code-for-the-netherlands
+permalink: chapters/code-for-the-netherlands
 chapter: code-for-the-netherlands
 ---
 Governments and authorities are facing major challenges. Citizens want to be
