@@ -13,9 +13,10 @@
       <div class="container">
         <h2>Projects</h2>
         {% assign organizations = site.data.organizations.objects %}
-        <table class="table is-striped is-narrow is-fullwidth">
+        <table id="project-table" class="table is-narrow is-fullwidth">
           <thead>
             <tr>
+              <th></th>
               <th>Name</th>
               <th>Description</th>
               <th class="is-hidden-mobile">Organization</th>
@@ -25,10 +26,12 @@
         {% for organization in organizations %}
           {% assign projects = organization.current_projects %}
               {% for project in projects %}
-              <tr class="{{ project.commit_status }}">
+
+              <tr>
+                <td><i class="fa {{ project.commit_status }}" title="{{ project.commit_status }}"></i><span style="display:none;">{{ project.commit_status }}<span></td>
                 <td><a href="{{ project.code_url }}">{{ project.name }}</a></td>
                 <td>{{ project.description }}</td>
-                <td class="is-hidden-mobile"><a href="{{ '/' | relative_url}}{{ organization.id | downcase }}">{{ organization.name }}</a></td>
+                <td class="is-hidden-mobile"><a href="{{ '/chapters/' | relative_url}}{{ organization.id | downcase }}">{{ organization.name }}</a></td>
               </tr>
               {% endfor %}
 

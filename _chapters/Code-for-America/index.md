@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: Code For America
-permalink: code-for-america
+permalink: chapters/code-for-america
 chapter: code-for-america
 ---
 

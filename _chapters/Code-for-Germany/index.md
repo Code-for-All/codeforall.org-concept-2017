@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: Code For Germany
-permalink: code-for-germany
+permalink: chapters/code-for-germany
 chapter: code-for-germany
 ---
 To make it possible for every person to use open data and digital tools in order to actively engage and participate in society to improve their communities.
