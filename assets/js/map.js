@@ -12,7 +12,6 @@ $(document).ready(function() {
     orgs.features.forEach(function(org) {
 
       if (org.properties.type.indexOf("Code for All") != -1){
-          console.log(org.id.toLowerCase());
           org.properties.icon = {}
           org.properties.icon.iconSize = [38, 38]
           org.properties.icon['className'] = 'marker'
@@ -99,38 +98,83 @@ $(document).ready(function() {
   function showMap(cfallOrgs){
     // codeforamerica.j113mi4d - code for all
     // codeforamerica.map-hhckoiuj - brigade
-    var map = L.mapbox.map('map', 'codeforamerica.j113mi4d',
-    {
-      scrollWheelZoom:false
-    });
+    var worldLayer;
     var latlon = [27, 0], zoom = 2;
-    map.setView(latlon, zoom);
+    var map = L.map('map').setView(latlon, zoom);
 
-    // Add the cfall orgs to the map
-    var featureLayer = L.mapbox.featureLayer(cfallOrgs)
+    function iconStyle(feature) {
+      if (feature.properties.icon && feature.properties.icon.iconUrl) {
+       return {icon: L.icon(feature.properties.icon)};
+     }
+    };
 
-    featureLayer.eachLayer(function(marker) {
-      feature = marker.feature;
-      if (feature.properties.icon['iconUrl']){
-        marker.setIcon(L.icon(feature.properties.icon));
+    function worldStyle(feature) {
+        return {
+            fillColor: "#ccc",
+            weight: 2,
+            opacity: 1,
+            color: 'white',
+            fillOpacity: 0.7
+        };
+    };
+
+    function zoomToFeature(e) {
+      var layer = e.target;
+      $('#map-info').text(layer.feature.properties.name);
+      if(layer.feature.id) {
+        $('#' + layer.feature.id.toLowerCase()).addClass("map-highlight");
+      } else {
+        map.fitBounds(layer.getBounds());
+      }
+    }
+
+    function resetHighlight(e) {
+      var layer = e.target;
+      worldLayer.resetStyle(layer);
+      if(layer.feature.id) {
+        $('#' + layer.feature.id.toLowerCase()).removeClass("map-highlight");
+      }
+      $('#map-info').html("&nbsp;");
+    }
+
+    function highlightFeature(e) {
+      var layer = e.target;
+      if(layer.feature.id) {
+        $('#' + layer.feature.id.toLowerCase()).addClass("map-highlight");
+        $('#map-info').html('<em>' + layer.feature.properties.name + '</em>');
+      } else {
+        layer.setStyle({
+          fillColor: '#333'
+        });
+
+        if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+          layer.bringToFront();
+        }
+        $('#map-info').html('<i>' + layer.feature.properties.NAME + '</i>');
       }
 
+    }
+
+    function onEachFeature(feature, layer) {
+        layer.on({
+            mouseover: highlightFeature,
+            mouseout: resetHighlight,
+            click: zoomToFeature
+        });
+    }
+
+    // Add the worldmap
+    //.addTo(map);
+    $.getJSON( base_url + 'worldmap.geojson', function (response) {
+      worldLayer = L.geoJSON(response,{style: worldStyle, onEachFeature: onEachFeature}).addTo(map);
     });
 
-    featureLayer.addTo(map);
-    featureLayer.on('mouseover', function(e){
-      $('#' + e.layer.feature.id.toLowerCase()).addClass("map-highlight");
-      $('#map-info').text(e.layer.feature.properties.name);
-    });
-    featureLayer.on('mouseout', function(e){
-      $('#' + e.layer.feature.id.toLowerCase()).removeClass("map-highlight");
-      $('#map-info').html("&nbsp;");
-    });
-    featureLayer.on('click', function(e) {
-      $('#map-info').text(e.layer.feature.properties.name);
-      $('#' + e.layer.feature.id.toLowerCase()).addClass("map-highlight");
-    });
-
+    featureLayer = L.geoJSON(cfallOrgs, {
+        pointToLayer: function(feature, latlng) {
+            return L.marker(latlng, iconStyle(feature));
+        }, onEachFeature: onEachFeature
+    }).addTo(map);
+    map.fitBounds(featureLayer.getBounds());
   };
 
 });
