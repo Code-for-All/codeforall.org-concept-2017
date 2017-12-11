@@ -27,6 +27,9 @@ header {
 .banner em {
   color: #4DD7FB;
 }
+section {
+  padding: 0 0 1rem 0 !important;
+}
 section h2 {
   color: #0D71B4 !important;
   font-size: 1.8em;
@@ -53,7 +56,9 @@ section p em {
   width: 100%;
   height: 400px;
   background: #fff !important;
-
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
 }
 /*i.pending::before {
   font: normal normal normal 14px/1 FontAwesome;
