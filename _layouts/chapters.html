@@ -31,7 +31,27 @@
                 <article class="tile is-child box">
                   {% assign i = i | plus: 1 %}
                   {% assign chapter = site.data.chapters[item.chapter] %}
-                  <h3><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
+                  {% if chapter.name %}
+                  {% assign title = chapter.name %}
+                  {% else %}
+                  {% assign title = item.title %}
+                  {% endif %}
+                  <nav class="level">
+                  <div class="level-left">
+                    <div class="level-item">
+                      <h3><a href="{{ item.url | relative_url }}">{{ title }}</a></h3>
+                    </div>
+                  </div>
+                  {% if chapter.partner_type == "governing partner" %}
+                  <div class="level-right">
+                    <div class="level-item">
+                      <span class="icon has-text-warning" title="Governing partner">
+                        <i class="fa fa-certificate"></i>
+                      </span>
+                    </div>
+                  </div>
+                  {% endif %}
+                  </nav>
                   {{ item.excerpt }}
                   {% assign social = chapter %}
                   {% include social.html %}

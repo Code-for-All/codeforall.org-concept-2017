@@ -11,13 +11,18 @@
     </nav>
     <section class="section">
       <div class="container">
+        {{ content }}
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
         {% for post in site.posts %}
         <article class="post">
-          <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+          <h2 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
           <div class="entry">
             {{ post.excerpt }}
           </div>
-          <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+          <a href="{{ site.baseurl }}{{ post.url }}" class="read-more"><i class="fa fa-long-arrow-right"></i></a>
         </article>
         {% endfor %}
       </div>
