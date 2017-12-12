@@ -1,5 +1,6 @@
 {
   "code-for-america":{
+    "partner_type": "governing partner",
     "website": "http://www.codeforamerica.org/",
     "email": "info@codeforamerica.org",
     "twitter": "codeforamerica",
@@ -17,6 +18,7 @@
     ]
   },
   "code-for-japan":{
+    "partner_type": "governing partner",
     "website": "http://code4japan.org",
     "email": "info@code4japan.org",
     "twitter": "codeforjp",
@@ -41,6 +43,7 @@
     ]
   },
   "code-for-south-africa": {
+    "partner_type": "governing partner",
     "website": "http://code4sa.org",
     "twitter": "code4sa",
     "github": "code4sa",
@@ -52,6 +55,9 @@
     ]
   },
   "code-for-the-netherlands": {
+    "partner_type": "governing partner",
+    "name": "Code For NL",
+    "alternatives": ["Code For the Netherlands", "Waag Society"],
     "website": "http://codefor.nl",
     "twitter": "codefornl",
     "github": "codefornl",
@@ -62,6 +68,7 @@
     ]
   },
   "code-for-australia":{
+    "partner_type": "governing partner",
     "email": "info@codeforaustralia.org",
     "twitter": "codeforaus",
     "github": "codeforaustralia",
@@ -93,6 +100,9 @@
     ]
   },
   "code-for-germany": {
+    "partner_type": "governing partner",
+    "name": "Code For Germany",
+    "alternatives": ["Open Knowledge Foundation Germany"],
     "website": "http://codefor.de",
     "email": "info@codefor.de",
     "twitter": "codeforde",
@@ -121,8 +131,16 @@
       }
     ]
   },
+  "code-for-mexico": {
+    "partner_type": "governing partner",
+    "name": "Code For Mexico",
+    "alternatives": ["Codeando México"]
+  },
   "codigo-para-la-ciudad-de-mexico": {
+    "partner_type": "governing partner",
     "website": "http://labcd.mx",
+    "name": "Code For Mexico City",
+    "alternatives": ["Laboratorio para la Ciudad"],
     "twitter": "labcdmx",
     "github": "labPLC",
     "people": [
@@ -141,6 +159,8 @@
     ]
   },
   "code-for-pakistan": {
+    "partner_type": "governing partner",
+    "name": "Code For Pakistan",
     "website": "http://www.codeforpakistan.org",
     "email": "info@codeforpakistan.org",
     "twitter": "codeforpakistan",
@@ -171,7 +191,10 @@
     ]
   },
   "code-for-poland": {
-    "website": "http://kodujdlapolski.pl",
+    "partner_type": "governing partner",
+    "name": "Code For Poland",
+    "alternatives": ["ePanstwo Foundation", "Koduj dla Polski"],
+    "website": "https://kodujdlapolski.pl",
     "twitter": "ePForgpl",
     "people": [
       {
@@ -192,6 +215,7 @@
     ]
   },
   "code-for-the-caribbean": {
+    "partner_type": "governing partner",
     "website": "http://codeforthecaribbean.org",
     "twitter": "codeforthecarib",
     "people": [
@@ -208,6 +232,16 @@
         "bio": "Varun has been involved with the SlashRoots Developer Community from its very inception. He is excited to see SlashRoots continue to grow and become an innovative driving force for social change. Though holding a Bachelors Degree in Computer Science and Engineering, Varun is actually a blend of both the right and left side of the brain. When not programming, Varun spends most of his time immersed in his photography and videography. Varun believes that one reason SlashRoots is so exciting is because as the Caribbean we are starting to explore more indigenous solutions to problems we face."
       }
     ]
+  },
+  "code-for-nigeria": {
+    "website": "http://codefornigeria.org"
+  },
+  "code-for-brazil": {
+    "website": "http://openbrazil.org"
+  },
+  "code-for-africa": {
+    "partner_type": "governing partner",
+    "website": "https://codeforafrica.org"
   }
 
 

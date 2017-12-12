@@ -12,10 +12,31 @@
     </nav>
     <section class="section">
       <div class="container">
-        <h2 class="title">{{ page.title }}</h2>
-        {{ content }}
-
         {% assign chapter = site.data.chapters[page.chapter] %}
+        {% if chapter.name %}
+        {% assign title = chapter.name %}
+        {% else %}
+        {% assign title = page.title %}
+        {% endif %}
+        <nav class="level">
+        <div class="level-left">
+          <div class="level-item">
+            <h2>{{ title }}</h2>
+          </div>
+          {% if chapter.partner_type == "governing partner" %}
+          <div class="level-item">
+            <span class="icon has-text-warning" title="Governing partner">
+              <i class="fa fa-certificate"></i>
+            </span>
+          </div>
+          {% endif %}
+        </div>
+        </nav>
+        {% if chapter.alternatives %}
+        <em>{{ chapter.alternatives  | join: ", " }}</em>
+        {% endif %}
+
+        {{ content }}
         {% if chapter.people %}
         <h2>People</h2>
         {% for person in chapter.people %}
