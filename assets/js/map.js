@@ -95,6 +95,12 @@ $(document).ready(function() {
   });
 
 
+  function hasMatch(feature, collection){
+    collection.filter(function(a){
+      console.log(a.id);
+      console.log(feature);
+      return a.id.toLowerCase() == feature.id.toLowerCase })[0];
+  }
   function showMap(cfallOrgs){
     // codeforamerica.j113mi4d - code for all
     // codeforamerica.map-hhckoiuj - brigade
@@ -103,19 +109,26 @@ $(document).ready(function() {
     var map = L.map('map').setView(latlon, zoom);
 
     function iconStyle(feature) {
-      if (feature.properties.icon && feature.properties.icon.iconUrl) {
-       return {icon: L.icon(feature.properties.icon)};
-     }
+      //if (feature.properties.icon && feature.properties.icon.iconUrl) {
+    //   return {icon: L.icon(feature.properties.icon)};
+     //}
     };
 
     function worldStyle(feature) {
-        return {
-            fillColor: "#ccc",
-            weight: 2,
-            opacity: 1,
-            color: 'white',
-            fillOpacity: 0.7
-        };
+      var fillcolor = "#ccc";
+      if (feature.properties.chapter) {
+        fillcolor = "#3273dc";
+      }
+      if (feature.properties.type && feature.properties.type.toLowerCase() == "governing partner") {
+        fillcolor = "#ffdd57"
+      }
+      return {
+          fillColor: fillcolor,
+          weight: 2,
+          opacity: 1,
+          color: 'white',
+          fillOpacity: 0.7
+      };
     };
 
     function zoomToFeature(e) {
@@ -144,7 +157,7 @@ $(document).ready(function() {
         $('#map-info').html('<em>' + layer.feature.properties.name + '</em>');
       } else {
         layer.setStyle({
-          fillColor: '#333'
+          color: '#3273dc'
         });
 
         if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {

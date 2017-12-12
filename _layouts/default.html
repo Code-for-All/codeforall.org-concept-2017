@@ -4,6 +4,13 @@
   <body>
   {% include header.html %}
   {{ content }}
+  {% if page.youtube %}
+  <section class="section">
+    <div class="container">
+      <!--<iframe width="100%" height="500px" src="//www.youtube.com/embed/{{ page.youtube }}" frameborder="0" allowfullscreen></iframe>-->
+    </div>
+  </section>
+  {% endif %}
   {% include footer.html %}
   </body>
 </html>
