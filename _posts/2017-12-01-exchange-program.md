@@ -1,6 +1,22 @@
 ---
 layout: post
-title:  "Code for All Exchange Program #1"
+title: 'Code for All Exchange Program #1'
+date: 2017-12-01 10:35:37.000000000 +01:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Africa
+- Announcements
+- Exchange program
+tags: []
+meta:
+  _rest_api_published: '1'
+  _rest_api_client_id: "-1"
+  _publicize_job_id: '12030616132'
+author: aiyahsu
 ---
 Code for Africa is going to fund two exchange projects during __January-June 2018__, each project will receive a grant up to USD 5,000. The funding intends to support for travel costs, a basic stipend to cover living expenses, accommodation or other local needs. Specific arrangements may vary by each project proposal. To receive the funding, applicant will be asked to provide the actual expense receipts.
 <!--more-->
