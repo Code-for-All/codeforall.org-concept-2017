@@ -62,9 +62,9 @@
     "twitter": "codefornl",
     "github": "codefornl",
     "people":[
-      {"name": "Johan Groenen", "photo": "Facebook_default_male_avatar.gif", "role": "Secretary"},
+      {"name": "Johan Groenen", "photo": "avatar-johan.jpg", "role": "Secretary"},
       {"name": "Ivonne Jansen-Dings", "photo": "avatar-ivonne.jpg", "role": "Treasurer"},
-      {"name": "Milo van der Linden", "photo": "Facebook_default_male_avatar.gif", "twitter": "miblon", "role": "Chairman"}
+      {"name": "Milo van der Linden", "photo": "avatar-milo.jpg", "twitter": "miblon", "role": "Chairman"}
     ]
   },
   "code-for-australia":{
