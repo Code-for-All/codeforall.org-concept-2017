@@ -1,35 +1,88 @@
 [
   {
     "link": {
-      "url": "http://www.codeforamerica.org/media/docs/codeforall/cftc-casestudy.pdf",
-      "type": "file-pdf-o"
+      "url": "https://docs.google.com/document/d/19bN5RWK5nQTpz0mHUViHrzHiommBUAMSztwNRzUcxYo/edit#heading=h.v3vvoe3g4dep",
+      "type": "fa-book"
     },
-    "name": "Code For the Caribbean Case Study",
-    "type": "case_study"
+    "name": "Organizer's playbook",
+    "type": "toolkit",
+    "group": "brigade",
+    "description": "The Playbook gives practical advice and real examples on starting and running a sustainable Brigade.; It includes: guidance on hosting hack nights, building a core team, and practicing user-centered design."
+  },
+  {
+    "link": {
+      "url": "https://docs.google.com/document/d/16CL9TdmWV0hDY6c85PwtzUcu1VjeSeiDFD2CbtLKf7s/edit#heading=h.wvfs33y672bp",
+      "type": "fa-book"
+    },
+    "name": "Organizer's handbook",
+    "type": "toolkit",
+    "group": "brigade",
+    "description": "The Playbook gives practical advice and real examples on starting and running a sustainable Brigade.; It includes: guidance on hosting hack nights, building a core team, and practicing user-centered design."
+  },
+  {
+    "link": {
+      "url": "http://www.codeforamerica.org/brigade/organize/calendar/",
+      "type": "fa-calendar-alt"
+    },
+    "name": "Brigade Organizer's calendar",
+    "type": "calendar",
+    "group": "brigade",
+    "description": "Overview of Code for America’s days of action, workshops, and more."
+  },
+  {
+    "link": {
+      "url": "http://brigade.codeforamerica.org/software/",
+      "type": "fa-rocket"
+    },
+    "name": "Software available to Brigades",
+    "type": "software",
+    "group": "brigade",
+    "description": ""
+  },
+  {
+    "link": {
+      "url": "http://www.codeforamerica.org/practices/",
+      "type": "fa-file-pdf"
+    },
+    "name": "Code for America's Practices for the 21st Century Government",
+    "type": "case_study",
+    "group": "egov"
   },
   {
     "link": {
       "url": "http://www.codeforamerica.org/media/docs/codeforall/cfmc-casestudy.pdf",
-      "type": "file-pdf-o"
+      "type": "fa-file-pdf"
     },
     "name": "Code For Mexico City Case Study",
-    "type": "case_study"
+    "type": "case_study",
+    "group": "fellowship"
+  },
+  {
+    "link": {
+      "url": "http://www.codeforamerica.org/media/docs/codeforall/cfmc-casestudy.pdf",
+      "type": "fa-file-pdf"
+    },
+    "name": "Code For Mexico City Case Study",
+    "type": "case_study",
+    "group": "fellowship"
   },
   {
     "link": {
       "url": "http://www.codeforamerica.org/media/docs/codeforall/cfg-casestudy.pdf",
-      "type": "file-pdf-o"
+      "type": "fa-file-pdf"
     },
     "name": "Code For Germany Case Study",
-    "type": "case_study"
+    "type": "case_study",
+    "group": "fellowship"
   },
   {
     "link": {
       "url": "http://www.codeforamerica.org/playbooks/fellowship/toolkit/",
-      "type": "globe"
+      "type": "fa-wrench"
     },
     "name": "Code For America Fellowship Toolkit",
-    "type": "toolkit"
+    "type": "toolkit",
+    "group": "fellowship"
   },
   {
     "link": {
