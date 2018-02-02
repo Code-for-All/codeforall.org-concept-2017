@@ -1,33 +1,6 @@
 [
   {
     "link": {
-      "url": "http://www.codeforamerica.org/about/international/2013-annual-report/",
-      "type": "globe"
-    },
-    "name": "Annual Report",
-    "type": "annual_report",
-    "year": 2013
-  },
-  {
-    "link": {
-      "url": "http://www.codeforamerica.org/about/international/2012-annual-report/",
-      "type": "globe"
-    },
-    "name": "Annual Report",
-    "type": "annual_report",
-    "year": 2012
-  },
-  {
-    "link": {
-      "url": "http://www.codeforamerica.org/about/international/2011-annual-report/",
-      "type": "globe"
-    },
-    "name": "Annual Report",
-    "type": "annual_report",
-    "year": 2011
-  },
-  {
-    "link": {
       "url": "http://www.codeforamerica.org/media/docs/codeforall/cftc-casestudy.pdf",
       "type": "file-pdf-o"
     },
