@@ -29,7 +29,7 @@
   {
     "link": {
       "url": "http://www.codeforamerica.org/media/docs/codeforall/cftc-casestudy.pdf",
-      "type": "globe"
+      "type": "file-pdf-o"
     },
     "name": "Code For the Caribbean Case Study",
     "type": "case_study"
