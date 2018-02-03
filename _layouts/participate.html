@@ -6,32 +6,45 @@
     <nav class="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
       <ul>
         <li><a href="{{ '/' | relative_url }}">Home</a></li>
-        <li class="is-active"><a href="{{ page.url | relative_url }}">Join us</a></li>
+        <li class="is-active"><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
       </ul>
     </nav>
     <section class="section">
       <div class="container">
-        <figure class="image">
-          <img src="{{ '/assets/images/015_8038_TS_0015.jpg' | relative_url }}">
-        </figure>
+          <div class="content notification">
+            <p>
+              <i>Code for All is a trusted global network of civic
+              tech organizations. Becoming a partner of the network
+              is a relationship-building process that can take multiple
+              weeks or months. We invite everyone to join in online discussion through our
+              Slack channel, collaborate with us, meet us at events or invite
+              us to your own.</i>
+          </p>
+          </div>
       </div>
     </section>
     <section class="section">
       <div class="container">
+        <div class="content">
         {{ content }}
+        </div>
       </div>
     </section>
     <section class="section">
-      <div class="container">
-        <figure class="image">
-          <img src="{{ '/assets/images/017_8038_TS_0017.jpg' | relative_url }}">
-          <figcaption>
-            Captains from Code for Australia at the Code for America Summit, 2014.
-          </figcaption>
-        </figure>
-
-      </div>
-    </section>
+        <div class="container">
+          <div class="content notification">
+              <p>
+                <i>A committee composed of representatives from current
+                  governing partners of Code for All who have been
+                  good-standing members for at least a year will be charged
+                  with evaluating new candidates for partnership. The
+                  committee will meet on demand, as applications for
+                  partnership are received. Participation in the committee
+                  is voluntary and any governing partner is welcome to join. The partnership committee will also be responsible for ensuring that existing partners continue to abide by the terms of the memorandum of understanding and meet the criteria membership. Any substantial violations of the Code for All code of conduct or extended periods of inactivity will lead to an immediate review of membership.</i>
+              </p>
+          </div>
+        </div>
+      </section>
     {% include footer.html %}
   </body>
 </html>
