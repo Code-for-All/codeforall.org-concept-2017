@@ -11,124 +11,20 @@
     </nav>
     <section class="section">
       <div class="container">
-          <div class="columns">
-              <div class="column">
-                  <h1 class="title has-text-centered">Fellowships</h1>
-                {% assign resources = site.data.resources %}
-                {% for item in resources %}
-                {% if item.group == "fellowship" %}
-                <div class="tile is-parent">
-                    <article class="tile is-child box {{item.type}}">
-                      <div class="media">
-                      {% assign i = i | plus: 1 %}
-                      <figure class="media-left">
-                        <a class="button is-large {{item.type}} is-outlined" href="{{ item.link.url }}">
-                          <i class="fas {{item.link.type}}"></i>
-                        </a>
-                      </figure>
-                      <div class="media-content">
-                        <div class="content">
-                          {{ item.name }}
-                          {% if item.year %}
-                          <br>
-                          <small>{{ item.year }}</small>
-                          {% endif %}
-                        </div>
-                      </div>
-                    </div>
-                    </article>
-                  </div>
-                {% endif %}
-                {% endfor %}
-              </div>
-              <div class="column">
-                  <h1 class="title has-text-centered">Brigades</h1>
-                {% assign resources = site.data.resources %}
-                {% for item in resources %}
-                {% if item.group == "brigade" %}
-                <div class="tile is-parent">
-                    <article class="tile is-child box {{item.type}}">
-                      <div class="media">
-                      {% assign i = i | plus: 1 %}
-                      <figure class="media-left">
-                        <a class="button is-large {{item.type}} is-outlined" href="{{ item.link.url }}">
-                          <i class="fas {{item.link.type}}"></i>
-                        </a>
-                      </figure>
-                      <div class="media-content">
-                        <div class="content">
-                          {{ item.name }}
-                          {% if item.year %}
-                          <br>
-                          <small>{{ item.year }}</small>
-                          {% endif %}
-                        </div>
-                      </div>
-                    </div>
-                    </article>
-                  </div>
-                {% endif %}
-                {% endfor %}
-              </div>
-              <div class="column">
-                  <h1 class="title has-text-centered">Digital government</h1>
-                {% assign resources = site.data.resources %}
-                {% for item in resources %}
-                {% if item.group == "egov" %}
-                <div class="tile is-parent">
-                    <article class="tile is-child box {{item.type}}">
-                      <div class="media">
-                      {% assign i = i | plus: 1 %}
-                      <figure class="media-left">
-                        <a class="button is-large {{item.type}} is-outlined" href="{{ item.link.url }}">
-                          <i class="fas {{item.link.type}}"></i>
-                        </a>
-                      </figure>
-                      <div class="media-content">
-                        <div class="content">
-                          {{ item.name }}
-                          {% if item.year %}
-                          <br>
-                          <small>{{ item.year }}</small>
-                          {% endif %}
-                        </div>
-                      </div>
-                    </div>
-                    </article>
-                  </div>
-                {% endif %}
-                {% endfor %}
-              </div>
-              <div class="column">
-                <h1 class="title has-text-centered">Impact research</h1>
-                {% assign resources = site.data.resources %}
-                {% for item in resources %}
-                {% if item.group == "impact" %}
-                <div class="tile is-parent">
-                    <article class="tile is-child box {{item.type}}">
-                      <div class="media">
-                      {% assign i = i | plus: 1 %}
-                      <figure class="media-left">
-                        <a class="button is-large {{item.type}} is-outlined" href="{{ item.link.url }}">
-                          <i class="fas {{item.link.type}}"></i>
-                        </a>
-                      </figure>
-                      <div class="media-content">
-                        <div class="content">
-                          {{ item.name }}
-                          {% if item.year %}
-                          <br>
-                          <small>{{ item.year }}</small>
-                          {% endif %}
-                        </div>
-                      </div>
-                    </div>
-                    </article>
-                  </div>
-                {% endif %}
-                {% endfor %}
-              </div>
-            </div>
+        <div class="columns">
+          <div id="fellowship" class="column" >
+            <h1 class="title has-text-centered is-4">Fellowships</h1>
+          </div>
+          <div id="brigade" class="column">
+            <h1 class="title has-text-centered is-4">Brigades</h1>
+          </div>
+          <div id="egov" class="column">
+            <h1 class="title has-text-centered is-4">Digital government</h1>
+          </div>
+          <div id="impact" class="column">
+            <h1 class="title has-text-centered is-4">Impact research</h1>
+          </div>
+        </div>
       </div>
     </section>
     <section class="section has-text-centered">

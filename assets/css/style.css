@@ -35,14 +35,7 @@ section h2 {
   font-size: 1.8em;
   line-height: 1.4em;
 }
-section p {
-  margin-top: 1em;
-  line-height: 1.6em;
-}
-section p em {
-  color: #0D71B4 !important;
-  font-weight: 900;
-}
+
 .navbar {
   z-index: 9999 !important;
 }
