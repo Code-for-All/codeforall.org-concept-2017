@@ -1,8 +1,8 @@
 ---
-layout: chapter
+layout: partner
 title: Code For The Caribbean
-permalink: chapters/code-for-the-caribbean
-chapter: code-for-the-caribbean
+permalink: partners/code-for-the-caribbean
+partner: code-for-the-caribbean
 ---
 Helping to bring civic innovation to the core of governance.
 <!--more-->

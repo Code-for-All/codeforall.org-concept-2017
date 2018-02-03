@@ -1,0 +1,170 @@
+[
+  {
+    "link": {
+      "url": "https://docs.google.com/document/d/19bN5RWK5nQTpz0mHUViHrzHiommBUAMSztwNRzUcxYo/edit#heading=h.v3vvoe3g4dep",
+      "type": "fa-book"
+    },
+    "name": "Playbook",
+    "type": "toolkit",
+    "group": "brigade",
+    "description": "The Brigade Organizer's Playbook gives practical advice and real examples on starting and running a sustainable Brigade.; It includes: guidance on hosting hack nights, building a core team, and practicing user-centered design.",
+    "year":"2018",
+    "author": {
+      "name": "Code For America",
+      "avatar":"assets/images/cfamerica.png",
+      "link":"https://www.codeforamerica.org/"
+    }
+  },
+  {
+    "link": {
+      "url": "https://docs.google.com/document/d/16CL9TdmWV0hDY6c85PwtzUcu1VjeSeiDFD2CbtLKf7s/edit#heading=h.wvfs33y672bp",
+      "type": "fa-book"
+    },
+    "name": "Handbook",
+    "type": "toolkit",
+    "group": "brigade",
+    "description": "The Brigade Organizer's Handbook",
+    "year":"2018",
+    "author": {
+      "name": "Code For America",
+      "avatar":"assets/images/cfamerica.png",
+      "link":"https://www.codeforamerica.org/"
+    }
+  },
+  {
+    "link": {
+      "url": "http://www.codeforamerica.org/brigade/organize/calendar/",
+      "type": "fa-calendar-alt"
+    },
+    "name": "Calendar",
+    "type": "calendar",
+    "group": "brigade",
+    "description": "The Brigade Organizer's Calendar provides an overview of Code for America’s days of action, workshops, and more."
+    ,
+    "author": {
+      "name": "Code For America",
+      "avatar":"assets/images/cfamerica.png",
+      "link":"https://www.codeforamerica.org/"
+    }
+  },
+  {
+    "link": {
+      "url": "http://brigade.codeforamerica.org/software/",
+      "type": "fa-rocket"
+    },
+    "name": "Catalog",
+    "type": "software",
+    "group": "brigade",
+    "description": "Catalog of Software available to Brigades",
+    "author": {
+      "name": "Code For America",
+      "avatar":"assets/images/cfamerica.png",
+      "link":"https://www.codeforamerica.org/"
+    }
+  },
+  {
+    "link": {
+      "url": "http://www.codeforamerica.org/practices/",
+      "type": "fa-file-pdf"
+    },
+    "name": "21st Century Gov",
+    "description": "Code for America's Practices for the 21st Century Government",
+    "type": "case_study",
+    "group": "egov",
+    "author": {
+      "name": "Code For America",
+      "avatar":"assets/images/cfamerica.png",
+      "link":"https://www.codeforamerica.org/"
+    }
+  },
+  {
+    "link": {
+      "url": "http://archive.codeforamerica.org/media/docs/codeforall/cftc-casestudy.pdf",
+      "type": "fa-file-pdf"
+    },
+    "name": "Caribbean",
+    "description": "The Code For the Carribean Case Study.",
+    "type": "case_study",
+    "group": "fellowship",
+    "year": "2015",
+    "author": {
+      "name": "Code For The Carribean",
+      "avatar":"assets/images/cfcaribbean.png",
+      "link":"https://www.codeforamerica.org/"
+    }
+  },
+  {
+    "link": {
+      "url": "http://www.codeforamerica.org/media/docs/codeforall/cfmc-casestudy.pdf",
+      "type": "fa-file-pdf"
+    },
+    "name": "Mexico City",
+    "type": "case_study",
+    "group": "fellowship",
+    "description": "The Code For Mexico City Case Study",
+    "year": "2015",
+    "author": {
+      "name": "Code For Mexico City",
+      "avatar":"assets/images/cfmexico.png"
+      
+    }
+  },
+  {
+    "link": {
+      "url": "http://www.codeforamerica.org/media/docs/codeforall/cfg-casestudy.pdf",
+      "type": "fa-file-pdf"
+    },
+    "name": "Germany",
+    "type": "case_study",
+    "group": "fellowship",
+    "description": "The Code For Germany Case Study",
+    "year": "2015",
+    "author": {
+      "name": "Code For Germany",
+      "avatar":"assets/images/cfgermany.jpeg"
+      
+    }
+  },
+  {
+    "link": {
+      "url": "http://www.codeforamerica.org/playbooks/fellowship/toolkit/",
+      "type": "fa-wrench"
+    },
+    "name": "Fellowship Toolkit",
+    "type": "toolkit",
+    "group": "fellowship",
+    "description": "Code for America’s advice on starting a similar fellowship program.",
+    "author": {
+      "name": "Code For America",
+      "avatar":"assets/images/cfamerica.png",
+      "link":"https://www.codeforamerica.org/"
+    }
+  },
+  {
+    "link": {
+      "url": "http://www.codeforamerica.org/governments/principles/",
+      "type": "globe"
+    },
+    "name": "Code For America Principles for Digital Government",
+    "type": "principles",
+    "author": {}
+  },
+  {
+    "link": {
+      "url": "http://www.codeforamerica.org/governments/principles/engagement/",
+      "type": "globe"
+    },
+    "name": "Code For America Engagement Standards",
+    "type": "standard",
+    "author": {}
+  },
+  {
+    "link": {
+      "url": "http://www.codeforamerica.org/brigade/tools/",
+      "type": "globe"
+    },
+    "name": "Code For America Brigade Toolkit",
+    "type": "toolkit",
+    "author": {}
+  }
+]

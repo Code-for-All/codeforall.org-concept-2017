@@ -1,8 +1,8 @@
 ---
-layout: chapter
+layout: partner
 title: Code For South Africa
-permalink: chapters/code-for-south-africa
-chapter: code-for-south-africa
+permalink: partners/code-for-south-africa
+partner: code-for-south-africa
 ---
 We are founded upon the desire to serve the common good through the advancement of transparency.
 <!--more-->

@@ -1,8 +1,8 @@
 ---
-layout: chapter
+layout: partner
 title: Code For Pakistan
-permalink: chapters/code-for-pakistan
-chapter: code-for-pakistan
+permalink: partners/code-for-pakistan
+partner: code-for-pakistan
 ---
 To elevate the quality of civic life in Pakistan.
 <!--more-->

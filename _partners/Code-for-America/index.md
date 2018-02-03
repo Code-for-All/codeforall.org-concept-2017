@@ -1,8 +1,8 @@
 ---
-layout: chapter
+layout: partner
 title: Code For America
-permalink: chapters/code-for-america
-chapter: code-for-america
+permalink: partners/code-for-america
+partner: code-for-america
 ---
 
 Code for America believes government can work for the people, by the people in

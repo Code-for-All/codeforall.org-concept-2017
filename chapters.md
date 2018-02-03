@@ -1,7 +1,7 @@
 ---
-title: Chapters
-permalink: chapters/
-layout: chapters
+title: Partners
+permalink: partners/
+layout: partners
 nav: true
 js: map
 ---

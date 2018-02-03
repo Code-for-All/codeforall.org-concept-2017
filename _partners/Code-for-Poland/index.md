@@ -1,8 +1,8 @@
 ---
-layout: chapter
+layout: partner
 title: Code For Poland
-permalink: chapters/code-for-poland
-chapter: code-for-poland
+permalink: partners/code-for-poland
+partner: code-for-poland
 ---
 Code for Poland is an interdisciplinary community seeking technological solutions to civic challenges.
 <!--more-->
