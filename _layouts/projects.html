@@ -31,7 +31,7 @@
                 <td><i class="fa {{ project.commit_status }}" title="{{ project.commit_status }}"></i><span style="display:none;">{{ project.commit_status }}<span></td>
                 <td><a href="{{ project.code_url }}">{{ project.name }}</a></td>
                 <td>{{ project.description }}</td>
-                <td class="is-hidden-mobile"><a href="{{ '/chapters/' | relative_url}}{{ organization.id | downcase }}">{{ organization.name }}</a></td>
+                <td class="is-hidden-mobile"><a href="{{ '/partners/' | relative_url}}{{ organization.id | downcase }}">{{ organization.name }}</a></td>
               </tr>
               {% endfor %}
 

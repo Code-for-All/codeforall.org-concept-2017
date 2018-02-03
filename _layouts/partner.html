@@ -6,15 +6,15 @@
     <nav class="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
       <ul>
         <li><a href="{{ '/' | relative_url }}">Home</a></li>
-        <li><a href="{{ '/chapters' | relative_url }}">Chapters</a></li>
+        <li><a href="{{ '/partners' | relative_url }}">Partners</a></li>
         <li class="is-active"><a href="#" aria-current="page">{{ page.title }}</a></li>
       </ul>
     </nav>
     <section class="section">
       <div class="container">
-        {% assign chapter = site.data.chapters[page.chapter] %}
-        {% if chapter.name %}
-        {% assign title = chapter.name %}
+        {% assign partner = site.data.partners[page.partner] %}
+        {% if partner.name %}
+        {% assign title = partner.name %}
         {% else %}
         {% assign title = page.title %}
         {% endif %}
@@ -23,7 +23,7 @@
           <div class="level-item">
             <h2>{{ title }}</h2>
           </div>
-          {% if chapter.partner_type == "governing partner" %}
+          {% if partner.partner_type == "governing partner" %}
           <div class="level-item">
             <span class="icon has-text-warning" title="Governing partner">
               <i class="fa fa-certificate"></i>
@@ -32,14 +32,14 @@
           {% endif %}
         </div>
         </nav>
-        {% if chapter.alternatives %}
-        <em>{{ chapter.alternatives  | join: ", " }}</em>
+        {% if partner.alternatives %}
+        <em>{{ partner.alternatives  | join: ", " }}</em>
         {% endif %}
 
         {{ content }}
-        {% if chapter.people %}
+        {% if partner.people %}
         <h2>People</h2>
-        {% for person in chapter.people %}
+        {% for person in partner.people %}
         <article class="media">
           <figure class="media-left">
             <p class="image is-96x96">

@@ -1,8 +1,8 @@
 ---
-layout: chapter
+layout: partner
 title: Code For Australia
-permalink: chapters/code-for-australia
-chapter: code-for-australia
+permalink: partners/code-for-australia
+partner: code-for-australia
 ---
 Our mission is to improve the interface between citizens and government via civic technology, and in return create a civic-tech ecosystem in Australia.
 <!--more-->

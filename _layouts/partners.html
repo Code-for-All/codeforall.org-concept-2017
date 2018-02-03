@@ -6,7 +6,7 @@
     <nav class="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
       <ul>
         <li><a href="{{ '/' | relative_url }}">Home</a></li>
-        <li class="is-active"><a href="{{ page.url | relative_url }}">Chapters</a></li>
+        <li class="is-active"><a href="{{ page.url | relative_url }}">Partners</a></li>
       </ul>
     </nav>
     <section class="section">
@@ -23,16 +23,16 @@
       <div class="container">
           {% assign i = 0 %}
           {% assign j = 1 %}
-          {% for item in site.chapters %}
+          {% for item in site.partners %}
             {% if i == 0 %}
-            <div id="chapter_set_{{ j }}" class="tile is-ancestor">
+            <div id="partner_set_{{ j }}" class="tile is-ancestor">
             {% endif %}
-              <div id="{{ item.chapter }}" class="tile is-parent">
+              <div id="{{ item.partner }}" class="tile is-parent">
                 <article class="tile is-child box">
                   {% assign i = i | plus: 1 %}
-                  {% assign chapter = site.data.chapters[item.chapter] %}
-                  {% if chapter.name %}
-                  {% assign title = chapter.name %}
+                  {% assign partner = site.data.partners[item.partner] %}
+                  {% if partner.name %}
+                  {% assign title = partner.name %}
                   {% else %}
                   {% assign title = item.title %}
                   {% endif %}
@@ -42,7 +42,7 @@
                       <h3><a href="{{ item.url | relative_url }}">{{ title }}</a></h3>
                     </div>
                   </div>
-                  {% if chapter.partner_type == "governing partner" %}
+                  {% if partner.partner_type == "governing partner" %}
                   <div class="level-right">
                     <div class="level-item">
                       <span class="icon has-text-warning" title="Governing partner">
@@ -53,7 +53,7 @@
                   {% endif %}
                   </nav>
                   {{ item.excerpt }}
-                  {% assign social = chapter %}
+                  {% assign social = partner %}
                   {% include social.html %}
                 </article>
               </div>

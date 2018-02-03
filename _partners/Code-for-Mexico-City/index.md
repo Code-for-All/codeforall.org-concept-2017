@@ -1,8 +1,8 @@
 ---
-layout: chapter
+layout: partner
 title: Code For Mexico City
-permalink: chapters/code-for-mexico-city
-chapter: codigo-para-la-ciudad-de-mexico
+permalink: partners/code-for-mexico-city
+partner: codigo-para-la-ciudad-de-mexico
 ---
 Big City. Big Change.
 <!--more-->
