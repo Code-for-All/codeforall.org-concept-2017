@@ -23,8 +23,7 @@ Map data available from [Natural Earth Data](http://www.naturalearthdata.com/dow
 
 Contacts
 --------
-
-* Andrew Hyder ([ondrae](https://github.com/ondrae))
+* Milo van der Linden ([milovanderlinden](https://github.com/milovanderlinden))
 
 
 Submitting an Issue
