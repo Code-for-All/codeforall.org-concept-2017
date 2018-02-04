@@ -19,6 +19,8 @@ This site is built with HTML, CSS, Javascript. It runs on [jekyll](http://jekyll
 
 The data about the Code for All groups is pulled from the [Code for America API](http://codeforamerica.org/api). The work on that project is happening under the [cfapi](https://github.com/codeforamerica/cfapi) repository.
 
+Map data available from [Natural Earth Data](http://www.naturalearthdata.com/downloads/110m-cultural-vectors/)
+
 Contacts
 --------
 

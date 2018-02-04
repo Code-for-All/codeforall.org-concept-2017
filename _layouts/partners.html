@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+{% include head.html %}
+  <body>
+  {% include header.html %}
+    <nav class="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
+      <ul>
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li class="is-active"><a href="{{ page.url | relative_url }}">Partners</a></li>
+      </ul>
+    </nav>
+    <section class="section">
+      <div class="container">
+        <div id="map"></div>
+        <div class="level">
+          <p class="level-item has-text-centered">
+            <span id="map-info">&nbsp;</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+          {% assign i = 0 %}
+          {% assign j = 1 %}
+          {% for item in site.partners %}
+            {% if i == 0 %}
+            <div id="partner_set_{{ j }}" class="tile is-ancestor">
+            {% endif %}
+              <div id="{{ item.partner }}" class="tile is-parent">
+                <article class="tile is-child box">
+                  {% assign i = i | plus: 1 %}
+                  {% assign partner = site.data.partners[item.partner] %}
+                  {% if partner.name %}
+                  {% assign title = partner.name %}
+                  {% else %}
+                  {% assign title = item.title %}
+                  {% endif %}
+                  <nav class="level">
+                  <div class="level-left">
+                    <div class="level-item">
+                      <h3><a href="{{ item.url | relative_url }}">{{ title }}</a></h3>
+                    </div>
+                  </div>
+                  {% if partner.partner_type == "governing partner" %}
+                  <div class="level-right">
+                    <div class="level-item">
+                      <span class="icon has-text-warning" title="Governing partner">
+                        <i class="fa fa-certificate"></i>
+                      </span>
+                    </div>
+                  </div>
+                  {% endif %}
+                  </nav>
+                  {{ item.excerpt }}
+                  {% assign social = partner %}
+                  {% include social.html %}
+                </article>
+              </div>
+            {% if i == 3 %}
+              {% assign i = 0 %}
+              {% assign j = j | plus: 1 %}
+            </div>
+            {% endif %}
+          {% endfor %}
+          {% if i != 3 %}
+            {% assign i = 0 %}
+
+          </div>
+          {% endif %}
+      </div>
+    </section>
+    {% include footer.html %}
+  </body>
+</html>

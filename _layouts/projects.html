@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+{% include head.html %}
+  <body>
+  {% include header.html %}
+    <nav class="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
+      <ul>
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li class="is-active"><a href="{{ page.url | relative_url }}">Projects</a></li>
+      </ul>
+    </nav>
+    <section class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        {% assign organizations = site.data.organizations.objects %}
+        <table id="project-table" class="table is-narrow is-fullwidth">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Name</th>
+              <th>Description</th>
+              <th class="is-hidden-mobile">Organization</th>
+            </tr>
+          </thead>
+          <tbody>
+        {% for organization in organizations %}
+          {% assign projects = organization.current_projects %}
+              {% for project in projects %}
+
+              <tr>
+                <td><i class="fa {{ project.commit_status }}" title="{{ project.commit_status }}"></i><span style="display:none;">{{ project.commit_status }}<span></td>
+                <td><a href="{{ project.code_url }}">{{ project.name }}</a></td>
+                <td>{{ project.description }}</td>
+                <td class="is-hidden-mobile"><a href="{{ '/partners/' | relative_url}}{{ organization.id | downcase }}">{{ organization.name }}</a></td>
+              </tr>
+              {% endfor %}
+
+            {% endfor %}
+            </tbody>
+          </table>
+        <!--
+        <table id="cfa-listings">
+        <thead>
+          <tr>
+            <th>Organization</th>
+            <th>Latest Project</th>
+            <th>Upcoming Event</th>
+          </tr>
+        </thead>
+        </table>
+        -->
+
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <p>Find more using the <a href="http://codeforamerica.org/geeks/civicissues">Civic Tech Issue Finder</a>.</p>
+      </div>
+    </section>
+    {% include footer.html %}
+  </body>
+</html>

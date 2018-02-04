@@ -1,14 +1,65 @@
 
-<script src='//code.jquery.com/jquery-2.1.0.min.js'></script>
+<script src='//code.jquery.com/jquery-3.2.1.min.js'></script>
+<script>
+var base_url = "{{ '/assets/' | relative_url }}";
+document.addEventListener('DOMContentLoaded', function () {
+
+  // Burger menu
+  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  if ($navbarBurgers.length > 0) {
+    $navbarBurgers.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+        var target = $el.dataset.target;
+        var $target = document.getElementById(target);
+        $el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+  {% if page.title == "" %}
+    //Navbar smoothing for home page, set page.title if you want to use it.
+    var menu = $('#mainnavbar');
+    var origOffsetY = menu.offset().top;
+    menu.addClass('navbar-hero');
+    menu.removeClass('is-fixed-top');
+    $(document).scroll(function(){
+      console.log(origOffsetY);
+      console.log($(window).scrollTop());
+        if ($(window).scrollTop() > 10) {
+            menu.addClass('is-fixed-top');
+            menu.removeClass('navbar-hero')
+        } else {
+            menu.addClass('navbar-hero');
+            menu.removeClass('is-fixed-top');
+        }
+    });
+  {% endif %}
+  {% if page.js == "projects" %}
+    $('#project-table').DataTable();
+  {% endif %}
+});
+</script>
 
 {% if page.js == "map" %}
-<link href='//api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css' rel='stylesheet' />
-<script src='//api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.js'></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+   integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+   integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+   crossorigin=""></script>
+<script src="{{ '/assets/js/map.js' | relative_url }}"></script>
 {% endif %}
 
 {% if page.js == "projects" %}
-<script src='//cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js'></script>
-<link rel="stylesheet" type="text/css" href="http://code-for-all.github.io/codeforall.org//cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
-<link rel="stylesheet" type="text/css" href="http://code-for-all.github.io/codeforall.org//cdn.datatables.net/responsive/1.0.2/css/dataTables.responsive.css">
+<script src='//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js'></script>
+<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+<!--<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/responsive/1.0.2/css/dataTables.responsive.css">
 <script src='//cdn.datatables.net/responsive/1.0.2/js/dataTables.responsive.js'></script>
+<script src="{{ '/assets/js/projects.js' | relative_url }}"></script>-->
+{% endif %}
+{% if page.js == "resources" %}
+<script src="{{ '/assets/js/resources.js' | relative_url }}"></script>
 {% endif %}

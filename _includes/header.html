@@ -1,28 +1,32 @@
-<header class="layout-breve">
-  <div class="global-header-compact" role="banner">
-    <a href="http://code-for-all.github.io/codeforall.orghttp://codeforall.org/" class="global-header-logo">
-      <img src="http://code-for-all.github.io/codeforall.org/images/code_for_all_logo.png" />
+<nav id="mainnavbar" class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a href="{{ '/' | relative_url }}" class="navbar-item">
+      <img src="{{ '/assets/images/code_for_all_logo_small.png' | relative_url }}">
     </a>
+    <button class="button navbar-burger" data-target="mainmenu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </div>
-  <nav class="nav-global-secondary">
-    <a class="mobile-menu" href="http://code-for-all.github.io/codeforall.org#">Menu</a>
-    <ul>
-      <li class="nav-tier1">
-        <a href="http://code-for-all.github.io/codeforall.org/about">About</a>
-      </li>
-      <li class="nav-tier1">
-        <a href="http://code-for-all.github.io/codeforall.org/partners">Partners</a>
-      </li>
-      <li class="nav-tier1">
-        <a href="http://code-for-all.github.io/codeforall.org/participate">Participate</a>
-      </li>
-      <li class="nav-tier1">
-        <a href="http://code-for-all.github.io/codeforall.org/projects">Projects</a>
-      </li>
-      <li class="nav-tier1">
-        <a href="http://code-for-all.github.io/codeforall.org/resources">Resources</a>
-      </li>
-
-    </ul>
-  </nav>
-</header>
+  <div class="navbar-menu" id="mainmenu">
+    <div class="navbar-end">
+      {%if page.url == '/' %}
+      <div class="navbar-item navbar-button selected"><i class="fa fa-home"></i></div>
+      {% else %}
+      <a class="navbar-item navbar-button" href="{{ '/' | relative_url }}" title="home">
+        <i class="fa fa-home"></i>
+      </a>
+      {% endif %}
+      {% for node in site.pages %}
+        {% if node.nav %}
+        {% if page.url == node.url %}
+          <div class="navbar-item navbar-button selected">{{node.title}}</div>
+        {% else %}
+          <a class="navbar-item navbar-button" href="{{node.url | relative_url }}">{{node.title}}</a>
+        {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</nav>

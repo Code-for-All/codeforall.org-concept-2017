@@ -1,2 +1,7 @@
 # Site settings
-url: "http://codeforall.org"
+collections:
+  partners:
+    output: true
+  projects:
+    output: true
+excerpt_separator: <!--more-->

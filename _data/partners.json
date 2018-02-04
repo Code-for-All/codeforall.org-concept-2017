@@ -1,0 +1,248 @@
+{
+  "code-for-america":{
+    "partner_type": "governing partner",
+    "website": "http://www.codeforamerica.org/",
+    "email": "info@codeforamerica.org",
+    "twitter": "codeforamerica",
+    "github": "codeforamerica",
+    "people": [
+      {
+        "name": "Catherine Bracy",
+        "photo": "avatar-catherine.jpg",
+        "twitter": "cbracy",
+        "linkedin": "catherinebracy",
+        "website": "http://cbracy.tumblr.co",
+        "role": "Director of Community Organizing",
+        "bio": "Catherine Bracy (Director of Community Organizing) Until November 2012, she was a product manager and director of the Obama campaign’s technology field office in San Francisco, the first of its kind in American political history. In that role she was responsible for organizing technologists to volunteer their skills to the campaign’s technology and digital efforts. Prior to joining the campaign, she ran the Knight Foundation’s 2011 News Challenge and before that was the administrative director at Harvard’s Berkman Center for Internet & Society. She is on the board of directors at the Citizen Engagement Lab and the Public Laboratory."
+      }
+    ]
+  },
+  "code-for-japan":{
+    "partner_type": "governing partner",
+    "website": "http://code4japan.org",
+    "email": "info@code4japan.org",
+    "twitter": "codeforjp",
+    "github": "codeforjapan",
+    "facebook": "codeforjapan",
+    "people": [
+      {
+        "name": "Hal Seki",
+        "photo": "avatar-hal.jpg",
+        "bio": "Hal Seki has been working as a Geo Developer since 2002. He was also well known as a community manager for solving social issues by technology and tools in Japan. Also, He is entitled as Ushahidi Certificated Developer since he has been a managing director of Sinsai.info, a cloud sourcing platform for collecting crisis information using Ushahidi since 2011, the east Japan earthquake occurred. He is also a member of Open Knowledge of Foundation Japan and OpenStreetMap Foundation Japan."
+      },
+      {
+        "name": "Yusuke Takagi",
+        "photo":"avatar-yusuke.jpg",
+        "bio": "Yusuke Takagi has been working on government projects as a CEO of Automation inc, a system integration company. He learned about the public procurement process of government and found issues of the process. His specialty is designing architect of IT system."
+      },
+      {
+        "name": "Nobuyuki Shirakawa",
+        "photo":"avatar-nobuyuki.jpg",
+        "bio": "Nobuyuki Shirakawa is an administrative director and a member of board of directors of the Code for Japan. He also serves not only as a project assistant professor of Keio University SFC but also as a Senior Researcher of the Technology Strategy Center, NEDO. Mr. Shirakawa became a researcher of Science, Technology and Innovation Policy, after working as a staff of the Hiroshima Prefectural Government in Japan for a decade. His specialty is public policy and evaluation based upon his hands-on experience in management and industry-academia collaboration in the field of industrial technologies ranging from agriculture to health and medicine."
+      }
+    ]
+  },
+  "code-for-south-africa": {
+    "partner_type": "governing partner",
+    "website": "http://code4sa.org",
+    "twitter": "code4sa",
+    "github": "code4sa",
+    "meetup": "Code-for-South-Africa-Hackers",
+    "people":[
+      {"name": "Adi Eyal", "photo": "avatar-adi-eyal.jpg", "twitter": "soapsudtycoon", "role": "Director"},
+      {"name": "Greg Kempe", "photo": "avatar-greg-kempe.jpg", "twitter": "longhotsummer", "role": "Principa Technologist"},
+      {"name": "Jennifer Walker", "photo": "avatar-jennifer-walker.jpg", "twitter": "nefiger", "role": "Product and Community Management"}
+    ]
+  },
+  "code-for-nl": {
+    "partner_type": "governing partner",
+    "name": "Code For NL",
+    "alternatives": ["Code For the Netherlands", "Waag Society"],
+    "website": "http://codefor.nl",
+    "twitter": "codefornl",
+    "github": "codefornl",
+    "people":[
+      {"name": "Johan Groenen", "photo": "avatar-johan.jpg", "role": "Secretary"},
+      {"name": "Ivonne Jansen-Dings", "photo": "avatar-ivonne.jpg", "role": "Treasurer"},
+      {"name": "Milo van der Linden", "photo": "avatar-milo.jpg", "twitter": "miblon", "role": "Chairman"}
+    ]
+  },
+  "code-for-australia":{
+    "partner_type": "governing partner",
+    "email": "info@codeforaustralia.org",
+    "twitter": "codeforaus",
+    "github": "codeforaustralia",
+    "website": "http://www.codeforaustralia.org/",
+    "people": [
+      { "name": "Alvaro Maz",
+        "photo": "avatar-alvaro.jpg",
+        "role": "Executive Director",
+        "bio": "Alvaro is one of the co-founders of Code for Australia and Executive Director. He spent his early career working in international development, urban planning and housing, and now is a devoted innovator in the public and social space. He’s also learning how to play the Ukulele.",
+        "website": "http://alvaromaz.branded.me",
+        "twitter": "alvaromaz",
+        "linkedin": "alvaromaz"
+      },
+      {
+        "name": "Jacob Lindsay",
+        "photo": "avatar-jacob.jpg",
+        "bio": "Jake completed his honors in Design specialising in Landscape Architecture in Melbourne. For the past 5 years he has worked at the intersection of digital media and urban design, improving our cities and urban experience. When he is at home, he enjoys living amongst bike parts from various decades, a fridge stocked with cheese and his sidekick-cat Maximus.",
+        "twitter": "_jakelindsay",
+        "linkedin": "jlindsay2"
+      },
+      {
+        "name": "Chris D’Aloisio",
+        "photo": "avatar-chrisd.jpg",
+        "bio": "Chris grew up pursuing two main interests: music and technology. His studies through high school consisted of majoring in piano and trumpet, whilst spending his spare time learning new programming languages and experimenting with the web. He now runs multiple digital projects, including one where technology and music intersect.",
+        "website": "http://chrisdaloisio.com",
+        "twitter": "chrisdaloisio",
+        "github": "cdaloisio"
+      }
+    ]
+  },
+  "code-for-germany": {
+    "partner_type": "governing partner",
+    "name": "Code For Germany",
+    "alternatives": ["Open Knowledge Foundation Germany"],
+    "website": "http://codefor.de",
+    "email": "info@codefor.de",
+    "twitter": "codeforde",
+    "people": [
+      {
+        "name": "Julia Kloiber",
+        "photo": "avatar-julia.jpg",
+        "bio": "Julia is Project Lead at the Open Knowledge Foundation Germany. She has a background in design and media theory and works on civic tech and open data projects. Her latest projects include a civic tech incubator “Stadt Land Code” and the community program “Code for Germany”. She is working closely with governments and companies on open data projects and strategies.",
+        "website": "http://juliakloiber.com",
+        "twitter": "j_kloiber"
+      },
+      {
+        "name": "Fiona Krakenbürger",
+        "photo": "avatar-fiona.jpg",
+        "bio": "Fiona Krakenbürger is the Community Organizer in the program Code for Germany. She supports and manages a community of 200 volunteer developers, designers and storytellers across Germany, that build Civic Tech, Apps and Visualizations with Open Data. Ms Krakenbürger has a background in European Ethnology and has been active as an advocate of digital literacy in Germany for several years.",
+        "website": "http://arduina.github.io/arduina.net/",
+        "twitter": "fotografiona"
+      },
+      {
+        "name": "Daniel Dietrich",
+        "photo": "avatar-danield.jpg",
+        "bio": "Daniel lives, dreams and works (only if needed) in Berlin. He is an open data and transparency evangelist, media activists, artists, anarchists, interdependent thinker and universal dilettante, a researcher on communications, utopia and futurism.",
+        "website": "http://ddie.me",
+        "linkedin": "ddietrich",
+        "twitter": "ddie"
+      }
+    ]
+  },
+  "code-for-mexico": {
+    "partner_type": "governing partner",
+    "name": "Code For Mexico",
+    "alternatives": ["Codeando México"]
+  },
+  "codigo-para-la-ciudad-de-mexico": {
+    "partner_type": "governing partner",
+    "website": "http://labcd.mx",
+    "name": "Code For Mexico City",
+    "alternatives": ["Laboratorio para la Ciudad"],
+    "twitter": "labcdmx",
+    "github": "labPLC",
+    "people": [
+      {
+        "name": "Gabriella Gómez-Mont",
+        "photo": "avatar-gabriella.jpg",
+        "bio": "With one of the most complex and fascinating cities in the whole world as a playground, Gabriella Gómez-Mont directs Laboratorio para la Ciudad, Mexico City’s new creative think-tank and experimental space. Laboratorio is a place to reflect about all things city and to ponder social scripts and urban futures for the largest megalopolis in the western hemisphere. Covering everything from the practical to the outlandish, the Laboratorio both explores immediate solutions for today and also examines the next 100 years of this city’s (and others cities’) life.",
+        "twitter": "gabriella_lab"
+      },
+      {
+        "name": "Daniel Tello",
+        "photo": "avatar-daniel.jpg",
+        "bio": "Fascinated since he was a kid about the digital world and its potential, Daniel did a bachelor's degree in electronics and now is part of the Technological Innovation area in the Lab for the City.",
+        "twitter": "_Daniel_Tello"
+      }
+    ]
+  },
+  "code-for-pakistan": {
+    "partner_type": "governing partner",
+    "name": "Code For Pakistan",
+    "website": "http://www.codeforpakistan.org",
+    "email": "info@codeforpakistan.org",
+    "twitter": "codeforpakistan",
+    "github": "codeforpakistan",
+    "people": [
+      {
+        "name": "Sheba Najmi",
+        "photo": "avatar-sheba.jpg",
+        "bio": "Code for Pakistan’s Founder & Executive Director, founded the organization in 2013. She was a Code for America Fellow in 2012, partnered with the City & County of Honolulu. Prior to CfA, she worked at Yahoo! for nearly 7 years as a User Experience Design Lead. She has also worked as a television news anchor in Pakistan, interviewing and reporting from both the streets and the studio. Sheba earned MS and BS degrees in Symbolic Systems from Stanford University, where she investigated the language, thought, and interaction of humans and computers.",
+        "twitter": "snajmi",
+        "linkedin": "snajmi",
+        "role": "Executive Director"
+      },
+      {
+        "name": "Ashar Rizqi",
+        "photo": "avatar-ashar.jpg",
+        "bio": "Ashar is Code for Pakistan’s President. He is a engineering lead at Box. Prior to Box, he was a founding engineer at Trendsters Inc. Ashar earned MS and BS degrees in Electrical and Computer Engineering from Purdue University and Texas A&M.",
+        "linkedin": "ashar-rizqi",
+        "role": "President"
+      },
+      {
+        "name": "Nabeha Khan",
+        "photo": "avatar-nabeha.jpg",
+        "bio": "Nabeha is Code for Pakistan’s General Secretary. She has a background in Human Resources with an MBA in Strategic Brand Management from the Institute of Business Management in Karachi. Nabeha is a passionate advocate for women’s issues and social change.",
+        "linkedin": "ashar-rizqi",
+        "role": "Secretary"
+      }
+    ]
+  },
+  "code-for-poland": {
+    "partner_type": "governing partner",
+    "name": "Code For Poland",
+    "alternatives": ["ePanstwo Foundation", "Koduj dla Polski"],
+    "website": "https://kodujdlapolski.pl",
+    "twitter": "ePForgpl",
+    "people": [
+      {
+        "name": "Krzysztof Madejski",
+        "photo": "avatar-chris.jpg",
+        "bio": "Krzysztof Madejski is fulfilling his activist passions working at Foundation ePaństwo and being a board member of Stowarzyszenie Miasto Moje A W Nim. After graduating from Warsaw University of Technology’s “Elka” Faculty he worked as a developer on a number of topics including medical data visualizations, GIS systems, SOA integration and web-based startups. He has co-built logistics platform standing behind the scenes of the Nowe Horyzonty Edukacji Filmowej film education project reaching school pupils in sixty polish cities. At ePaństwo Krzysztof is responsible for developers gathered in Koduj Dla Polski community (Code For Poland).",
+        "twitter": "kaymadejski",
+        "github": "KrzysztofMadejski",
+        "email": "krzysztof.madejski@epf.org.pl"
+      },
+      {
+        "name": "Jakub Górnicki",
+        "photo": "avatar-jakub.jpg",
+        "bio": "Jakub builds communities. He formerly did it for British and German startups. Then he started to create community around Sourcefabric, an open source software producer for professional media. Jakub is also a journalist. As a media consultant, in the past three years he's helped various media outlets in Georgia (tspress.ge, liberali.ge, netgazeti.ge, and seven others), Turkey (taraf.com.tr) and West Africa (wacsi.org). He teaches new media and blogging, and was named one of the most influential bloggers in Poland in 2012. As Operations Director at ePF, he combines those skills to make ePF and its services trustworthy, transparent and community driven.",
+        "linkedin": "jakubgornicki",
+        "twitter": "kosmo"
+      }
+    ]
+  },
+  "code-for-the-caribbean": {
+    "partner_type": "governing partner",
+    "website": "http://codeforthecaribbean.org",
+    "twitter": "codeforthecarib",
+    "people": [
+      {
+        "name": "Matthew McNaughton",
+        "photo": "avatar-matthew.jpg",
+        "email": "matthew@slashroots.org",
+        "bio": "Matthew is an Open Innovation & development Specialist at the World Bank and co-founder of SlashRoots. In these roles he develops strategies and programs for democratizing innovation and access to information utilizing user-centered design approaches and beneficiary feedback loops to improve public service design and delivery. His work focuses on enabling data-driven decision-making and building local capacity building and tech ecosystem development.",
+        "twitter": "mamcnaughton"
+      },
+      {
+        "name": "Varun Baker",
+        "photo": "avatar-varun.jpg",
+        "bio": "Varun has been involved with the SlashRoots Developer Community from its very inception. He is excited to see SlashRoots continue to grow and become an innovative driving force for social change. Though holding a Bachelors Degree in Computer Science and Engineering, Varun is actually a blend of both the right and left side of the brain. When not programming, Varun spends most of his time immersed in his photography and videography. Varun believes that one reason SlashRoots is so exciting is because as the Caribbean we are starting to explore more indigenous solutions to problems we face."
+      }
+    ]
+  },
+  "code-for-nigeria": {
+    "website": "http://codefornigeria.org"
+  },
+  "code-for-brazil": {
+    "website": "http://openbrazil.org"
+  },
+  "code-for-africa": {
+    "partner_type": "governing partner",
+    "website": "https://codeforafrica.org"
+  }
+
+
+}

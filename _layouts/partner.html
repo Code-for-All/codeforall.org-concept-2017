@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+{% include head.html %}
+  <body>
+    {% include header.html %}
+    <nav class="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
+      <ul>
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li><a href="{{ '/partners' | relative_url }}">Partners</a></li>
+        <li class="is-active"><a href="#" aria-current="page">{{ page.title }}</a></li>
+      </ul>
+    </nav>
+    <section class="section">
+      <div class="container">
+        {% assign partner = site.data.partners[page.partner] %}
+        {% if partner.name %}
+        {% assign title = partner.name %}
+        {% else %}
+        {% assign title = page.title %}
+        {% endif %}
+        <nav class="level">
+        <div class="level-left">
+          <div class="level-item">
+            <h2>{{ title }}</h2>
+          </div>
+          {% if partner.partner_type == "governing partner" %}
+          <div class="level-item">
+            <span class="icon has-text-warning" title="Governing partner">
+              <i class="fa fa-certificate"></i>
+            </span>
+          </div>
+          {% endif %}
+        </div>
+        </nav>
+        {% if partner.alternatives %}
+        <em>{{ partner.alternatives  | join: ", " }}</em>
+        {% endif %}
+
+        {{ content }}
+        {% if partner.people %}
+        <h2>People</h2>
+        {% for person in partner.people %}
+        <article class="media">
+          <figure class="media-left">
+            <p class="image is-96x96">
+              <img src="{{ '/assets/images/' | relative_url }}{{ person.photo }}"/>
+            </p>
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong>{{ person.name }}</strong> <small>{{ person.role }}</small>
+                <br>
+                <br>
+                {% if person.bio %}
+                {{ person.bio }}
+                {% endif %}
+              </p>
+            </div>
+            {% assign social = person %}
+            {% include social.html %}
+          </div>
+        </article>
+        {% endfor %}
+        {% endif %}
+      </div>
+    </section>
+    {% include footer.html %}
+  </body>
+</html>

@@ -1,18 +1,10 @@
-<section>
-  <div class="slab-gray layout-centered insulate-inner">
-
-    <h4>Sponsors / Funders</h4>
-
-    <p><a href="http://google.org"><img src="http://code-for-all.github.io/codeforall.org/images/google-org.png" height="36"></a> <a href="http://www.omidyar.com/"><img src="http://code-for-all.github.io/codeforall.org/images/omidyar.png" height="50"></a></p>
-
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        <small>Code For All, all rights reserved. Content licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY SA 4.0</a>.</small>
+      </p>
+    </div>
   </div>
-
-</section>
-
-{% if page.js == "map" %}
-<script src="js/map.js"></script>
-{% endif %}
-
-{% if page.js == "projects" %}
-<script src="js/projects.js"></script>
-{% endif %}
+</footer>
+{% include scripts.html %}

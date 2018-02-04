@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+{% include head.html %}
+  <body>
+  {% include header.html %}
+    <nav class="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
+      <ul>
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li class="is-active"><a href="{{ page.url | relative_url }}">Blog</a></li>
+      </ul>
+    </nav>
+    <section class="section">
+      <div class="container">
+        {{ content }}
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        {% for post in site.posts %}
+        <article class="post">
+          <h2 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+          <div class="entry">
+            {{ post.excerpt }}
+          </div>
+          <a href="{{ site.baseurl }}{{ post.url }}" class="read-more"><i class="fa fa-long-arrow-right"></i></a>
+        </article>
+        {% endfor %}
+      </div>
+    </section>
+    {% include footer.html %}
+  </body>
+</html>

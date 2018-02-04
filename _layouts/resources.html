@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+{% include head.html %}
+  <body>
+    {% include header.html %}
+    <nav class="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
+      <ul>
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li class="is-active"><a href="{{ page.url | relative_url }}">Resources</a></li>
+      </ul>
+    </nav>
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div id="fellowship" class="column" >
+            <h1 class="title has-text-centered is-4">Fellowships</h1>
+          </div>
+          <div id="brigade" class="column">
+            <h1 class="title has-text-centered is-4">Brigades</h1>
+          </div>
+          <div id="egov" class="column">
+            <h1 class="title has-text-centered is-4">Digital government</h1>
+          </div>
+          <div id="impact" class="column">
+            <h1 class="title has-text-centered is-4">Impact research</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section has-text-centered">
+      <a class="button is-large is-primary" href="https://github.com/Code-for-All/codeforall.org/issues/new?title=Resource proposition:&amp;labels=resource&amp;body=Link:%0AName:%0ADescription:%0AOrganization:%0APoint%20of%20contact:">Propose new resource</a>
+    </section>
+    {% include footer.html %}
+  </body>
+</html>

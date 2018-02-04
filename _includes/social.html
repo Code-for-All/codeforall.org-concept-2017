@@ -1,0 +1,39 @@
+<nav class="level is-mobile">
+  <div class="level-left">
+    {% if social.twitter %}
+    <a class="level-item" href="https://twiter.com/{{ social.twitter }}" title="@{{ person.twitter }}">
+      <span class="icon is-small"><i class="fab fa-twitter"></i></span>
+    </a>
+    {% endif %}
+    {% if social.website %}
+    <a class="level-item" href="{{ social.website }}" title="{{ social.website }}">
+      <span class="icon is-small"><i class="fa fa-globe"></i></span>
+    </a>
+    {% endif %}
+    {% if social.github %}
+    <a class="level-item" href="https://github.com/{{ social.github }}" title="{{ social.github }}">
+      <span class="icon is-small"><i class="fab fa-github"></i></span>
+    </a>
+    {% endif %}
+    {% if social.email %}
+    <a class="level-item" href="mailto://{{ social.email }}" title="{{ social.email }}">
+      <span class="icon is-small"><i class="fa fa-envelope"></i></span>
+    </a>
+    {% endif %}
+    {% if social.meetup %}
+    <a class="level-item" href="https://meetup.com/{{ social.meetup }}" title="{{ social.meetup }}">
+      <span class="icon is-small"><i class="fa fa-meetup"></i></span>
+    </a>
+    {% endif %}
+    {% if social.facebook %}
+    <a class="level-item" href="https://facebook.com/{{ social.facebook }}" title="{{ social.facebook }}">
+      <span class="icon is-small"><i class="fa fa-facebook"></i></span>
+    </a>
+    {% endif %}
+    {% if social.linkedin %}
+    <a class="level-item" href="https://linkedin.com/in/{{ social.linkedin }}" title="{{ social.linkedin }}">
+      <span class="icon is-small"><i class="fa fa-linkedin"></i></span>
+    </a>
+    {% endif %}
+  </div>
+</nav>
