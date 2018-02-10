@@ -12,6 +12,7 @@
     </nav>
     <section class="section">
       <div class="container">
+        <div class="content">
         {% assign partner = site.data.partners[page.partner] %}
         {% if partner.name %}
         {% assign title = partner.name %}
@@ -64,6 +65,7 @@
         {% endfor %}
         {% endif %}
       </div>
+    </div>
     </section>
     {% include footer.html %}
   </body>
