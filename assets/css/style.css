@@ -59,20 +59,19 @@ section h2 {
   color: #ccc !important;
 }*/
 i.success::before {
-  font: normal normal normal 14px/1 FontAwesome;
-  color: #23d160 !important;
-  content: "\f00c";
+  color: #006e27 !important;
 }
-i.success {
-  color: #fff;
+
+i.progress::before {
+  color: #e48b42 !important;
 }
 
 i.failure::before {
-  font: normal normal normal 14px/1 FontAwesome;
-  color: #ff3860 !important;
-  content: "\f00d";
+  color: #c70028 !important;
 }
-
+i.unknown::before {
+  color: #868686 !important;
+}
 .navbar-button {
   font-variant: small-caps;
 }
