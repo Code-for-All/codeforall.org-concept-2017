@@ -1,6 +1,6 @@
 ---
 layout: partner
-title: Code For The Netherlands
+title: Code For NL
 permalink: partners/code-for-nl
 partner: code-for-nl
 ---
