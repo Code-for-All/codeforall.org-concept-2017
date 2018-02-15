@@ -8,15 +8,27 @@ Goals
 
 There a few goals with this website:
 
-1. Show off the collected activites of the Code for All network.
+1. Show the collected activites of the Code for All network.
 2. Promote the work of the Code for All partners.
 3. Host tools needed by the network.
+4. Attract people to the Code for All network
 
 
-Install
+Development
 -------
 This site is built with HTML, CSS, Javascript. It runs on [jekyll](http://jekyllrb.com/) and is hosted by [GitHub Pages](https://pages.github.com/).
 
+1. Create a fork of this project
+2. Clone the fork to your computer
+3. `cd codeforall.org` into the directory
+4. run `jekyll serve .` from the root of the project
+5. Open the site at http://localhost:4000
+6. You can now manipulate the files and refresh your browser to see the results
+7. When finished, commit your changes and push them to your fork
+8. Create a pull request
+
+Resources
+-------
 The data about the Code for All groups is pulled from the [Code for America API](http://codeforamerica.org/api). The work on that project is happening under the [cfapi](https://github.com/codeforamerica/cfapi) repository.
 
 Map data available from [Natural Earth Data](http://www.naturalearthdata.com/downloads/110m-cultural-vectors/)
@@ -38,12 +50,3 @@ includes a stack trace and any details that may be necessary to reproduce the
 bug.
 
 [gist]: https://gist.github.com/
-
-Submitting a Pull Request
--------------------------
-
-1. Fork the project.
-2. Create a topic branch.
-3. Implement your feature or bug fix.
-4. Commit and push your changes.
-5. Submit a pull request.
