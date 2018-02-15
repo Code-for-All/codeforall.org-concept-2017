@@ -84,6 +84,35 @@ i.unknown::before {
     border-color: transparent;
     color: #fff;
 }
+.footer-social {
+  margin: 40px 0;
+}
+.footer-social ul li a i:hover {
+  color: #fff;
+  background-color: #0D71B4;
+}
+.footer-social ul li a i {
+  display: block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 18px;
+  position: relative;
+  color: #0D71B4;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+.footer-social ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-social ul li {
+  margin: 0 15px;
+  display: inline-block;
+}
+
 /*
 .navbar-button-selected, .navbar-button {
   display: block;
