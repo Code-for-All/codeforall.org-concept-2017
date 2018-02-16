@@ -18,7 +18,8 @@
         <i class="fa fa-home"></i>
       </a>
       {% endif %}
-      {% for node in site.pages %}
+      {% assign navigation_pages = site.pages | sort: 'position' %}
+      {% for node in navigation_pages %}
         {% if node.nav %}
         {% if page.url == node.url %}
           <div class="navbar-item navbar-button selected">{{node.title}}</div>
