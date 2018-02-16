@@ -3,7 +3,14 @@
 {% include head.html %}
   <body>
   {% include header.html %}
-  {{ content }}
+  <section class="section">
+    <div class="container">
+      <div class="content">
+        {{ content }}
+      </div>
+    </div>
+  </section>
+
   {% if page.youtube %}
   <section class="section">
     <div class="container">
