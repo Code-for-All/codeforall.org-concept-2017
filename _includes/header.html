@@ -1,33 +1,28 @@
 <nav id="mainnavbar" class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a href="{{ '/' | relative_url }}" class="navbar-item">
-      <img src="{{ '/assets/images/code_for_all_logo_small.png' | relative_url }}">
-    </a>
-    <button class="button navbar-burger" data-target="mainmenu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </div>
-  <div class="navbar-menu" id="mainmenu">
-    <div class="navbar-end">
-      {%if page.url == '/' %}
-      <div class="navbar-item navbar-button selected"><i class="fa fa-home"></i></div>
-      {% else %}
-      <a class="navbar-item navbar-button" href="{{ '/' | relative_url }}" title="home">
-        <i class="fa fa-home"></i>
+  <div class="container">
+    <div class="navbar-brand">
+      <a href="{{ '/' | relative_url }}" class="navbar-item">
+        <img src="{{ '/assets/images/code_for_all_logo_small.png' | relative_url }}">
       </a>
-      {% endif %}
-      {% assign navigation_pages = site.pages | sort: 'position' %}
-      {% for node in navigation_pages %}
-        {% if node.nav %}
-        {% if page.url == node.url %}
-          <div class="navbar-item navbar-button selected">{{node.title}}</div>
-        {% else %}
-          <a class="navbar-item navbar-button" href="{{node.url | relative_url }}">{{node.title}}</a>
-        {% endif %}
-        {% endif %}
-      {% endfor %}
+      <button class="button navbar-burger" data-target="mainmenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="navbar-menu" id="mainmenu">
+      <div class="navbar-end">
+        {% assign navigation_pages = site.pages | sort: 'position' %}
+        {% for node in navigation_pages %}
+          {% if node.nav %}
+          {% if page.url == node.url %}
+            <div class="navbar-item navbar-button selected">{{node.title}}</div>
+          {% else %}
+            <a class="navbar-item navbar-button" href="{{node.url | relative_url }}">{{node.title}}</a>
+          {% endif %}
+          {% endif %}
+        {% endfor %}
+      </div>
     </div>
   </div>
 </nav>

@@ -2,7 +2,6 @@ body {
     background-color: #FFF;
     font-family: Lato, sans-serif;
     font-size: 100%;
-    padding: 1.5em;
 }
 .banner {
   padding-top: 2em;
@@ -27,9 +26,7 @@ header {
 .banner em {
   color: #4DD7FB;
 }
-section {
-  padding: 0 0 1rem 0 !important;
-}
+
 section h2 {
   color: #0D71B4 !important;
   font-size: 1.8em;
@@ -179,4 +176,25 @@ figure figcaption {
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 50%;
+}
+
+.bottom-shader {
+  transition: all .6s ease;
+  border-bottom: 1px solid rgba(219, 219, 219, 0.5);
+  box-shadow: 0 4px 2px -2px gray;
+}
+
+.hero {
+  background: url('../images/banner/banner-cfa1.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:0 -360px;
+  height: 500px;
+}
+
+
+.hero h1 {
+	color: #fff;
+  text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
+  font-size: 4em;
 }

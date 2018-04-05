@@ -1,5 +1,5 @@
 ---
-title: Blog
+title: Stories
 permalink: blog
 layout: redirect
 nav: true
