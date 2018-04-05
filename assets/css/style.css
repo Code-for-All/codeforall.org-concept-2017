@@ -188,8 +188,7 @@ figure figcaption {
   background: url('../images/banner/banner-cfa1.jpg');
   background-repeat:no-repeat;
   background-size:cover;
-  background-position:0 -360px;
-  height: 500px;
+  background-position:center;
 }
 
 
