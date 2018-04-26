@@ -79,7 +79,7 @@ $(document).ready(function() {
           weight: 2,
           opacity: 1,
           color: 'white',
-          fillOpacity: 0.7
+          fillOpacity: 1
       };
     };
 
