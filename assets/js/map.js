@@ -67,11 +67,12 @@ $(document).ready(function() {
 
     function worldStyle(feature) {
       var fillcolor = "#ccc";
-      if (feature.properties.partner) {
-        fillcolor = "#3273dc";
-      }
+      //if (feature.properties.partner) {
+      //  fillcolor = "#3273dc";
+      //}
       if (feature.properties.type && feature.properties.type.toLowerCase() == "governing partner") {
-        fillcolor = "#ffdd57"
+        fillcolor = "#3273dc";
+        //fillcolor = "#ffdd57"
       }
       return {
           fillColor: fillcolor,
